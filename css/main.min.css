@@ -2576,5 +2576,8 @@ body {
 .gallery-wrapper {
   background-color: #fff; }
 
+.methods {
+  position: relative; }
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
