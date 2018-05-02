@@ -2292,6 +2292,9 @@ b,
 strong {
   font-weight: bold; }
 
+.carousel {
+  background-color: #000; }
+
 .slick-dots li button {
   position: absolute;
   -webkit-transform: translateY(-50px);
@@ -2565,7 +2568,8 @@ body {
     font-style: italic;
     font-weight: 300;
     max-width: 70%;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 20px; }
     .production-text span {
       font-weight: 700; }
 
