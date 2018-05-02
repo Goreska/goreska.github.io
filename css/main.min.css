@@ -2295,42 +2295,6 @@ strong {
 .carousel {
   background-color: #000; }
 
-.slick-dots li button {
-  position: absolute;
-  -webkit-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-          transform: translateY(-50px);
-  border: 1px solid #777;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  color: #fff;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s; }
-
-.slick-dots li button:before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: #777;
-  opacity: 1;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  margin: -5px;
-  -webkit-transition: border-color .3s;
-  -o-transition: border-color .3s;
-  transition: border-color .3s; }
-
-.slick-dots li:hover button,
-.slick-dots li.slick-active button {
-  border-color: #fff; }
-
-.slick-dots li:hover button:before,
-.slick-dots li.slick-active button:before {
-  background: #fff; }
-
 body {
   position: relative; }
 
@@ -2431,6 +2395,17 @@ body {
 .carousel-item img {
   height: 100vh; }
 
+.carousel-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
 .carousel-caption {
   top: 35%;
   bottom: auto; }
@@ -2520,10 +2495,29 @@ body {
   font-size: 14px; }
 
 .slogan {
+  background: url(../img/Slogan/slogan-bg.jpg) center no-repeat;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: grey; }
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  z-index: 1;
+  position: relative; }
+  .slogan::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
   .slogan-text {
+    margin-top: 40px;
     color: #fff;
     font-size: 30px;
     font-style: italic;
@@ -2577,7 +2571,64 @@ body {
   background-color: #fff; }
 
 .methods {
-  position: relative; }
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .methods-description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 60px; }
+  .methods-text__title {
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-bottom: 10px; }
+  .methods-text__description {
+    font-size: 16px;
+    font-weight: 300; }
+    .methods-text__description span {
+      font-weight: 700; }
+  .methods-block__img {
+    background: url(../img/methods/methods-img.jpg) center no-repeat;
+    min-height: 300px;
+    max-width: 100%;
+    margin-bottom: 40px; }
+  .methods-block__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+.statistics-description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 15px; }
+
+.statistics-small {
+  text-align: center;
+  display: block;
+  font-weight: 300; }
+
+.numbers {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-color: #000; }
+  .numbers-wrapper-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
