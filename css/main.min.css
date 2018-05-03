@@ -2570,6 +2570,9 @@ body {
 .gallery-wrapper {
   background-color: #fff; }
 
+.galereya-grid {
+  min-height: 1525px; }
+
 .methods {
   position: relative;
   padding-top: 50px;
@@ -2616,19 +2619,69 @@ body {
 .statistics-small {
   text-align: center;
   display: block;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 70px; }
 
 .numbers {
   padding-top: 80px;
   padding-bottom: 30px;
   color: #fff;
-  background-color: #000; }
+  background-color: #000;
+  position: relative; }
+  .numbers-box {
+    position: absolute;
+    background: url(../img/methods/energy-box.png) center no-repeat;
+    width: 100%;
+    min-height: 500px;
+    top: -75px;
+    left: 51%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .numbers-wrapper-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
+  .numbers-wrapper-left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end; }
   .numbers-wrapper-block {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px; }
+    .numbers-wrapper-block__number {
+      font-size: 30px;
+      font-weight: 900;
+      padding: 0 30px 0 20px; }
+    .numbers-wrapper-block__title {
+      font-size: 18px;
+      font-weight: 700; }
+    .numbers-wrapper-block__descr {
+      font-size: 14px;
+      font-weight: 300; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/

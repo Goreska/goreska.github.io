@@ -270,6 +270,8 @@ body
 			font-weight: 700
 .gallery-wrapper
 	background-color: $light
+.galereya-grid
+	min-height: 1525px
 .methods
 	position: relative
 	padding-top: 50px
@@ -312,15 +314,43 @@ body
 		text-align: center
 		display: block
 		font-weight: 300
+		margin-bottom: 70px
 .numbers
 	padding-top: 80px
 	padding-bottom: 30px
 	color: $light
 	background-color: #000
+	position: relative
+	&-box
+		position: absolute
+		background: url(../img/methods/energy-box.png) center no-repeat
+		width: 100%
+		min-height: 500px
+		top: -75px
+		left: 51%
+		transform: translateX(-50%)
 	&-wrapper
+		&-right
+			display: flex
+			flex-direction: column
+			align-items: start
+		&-left
+			display: flex
+			flex-direction: column
+			align-items: end
 		&-block
 			display: flex
 			margin-bottom: 30px
+			&__number
+				font-size: 30px
+				font-weight: 900
+				padding: 0 30px 0 20px
+			&__title
+				font-size: 18px
+				font-weight: 700
+			&__descr
+				font-size: 14px
+				font-weight: 300
 
 
 
