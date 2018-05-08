@@ -107,7 +107,7 @@ body
 			li
 				display: inline-block
 				a
-					transition: 0.3s ease
+					transition: 0.5s ease
 					text-transform: uppercase
 					color: $light
 					display: block
@@ -151,6 +151,7 @@ body
 	margin-bottom: 150px
 	font-weight: 900
 	font-size: 80px
+	text-transform: uppercase
 .carousel-description
 	font-weight: 300
 	font-style: italic
@@ -229,16 +230,21 @@ body
 		height: 100%
 		z-index: -1
 	&-text
+		display: flex
+		flex-direction: column
+		align-items: center
 		margin-top: 40px
 		color: $light
 		font-size: 30px
-		font-style: italic
 		font-weight: 300
 	&-title
 		text-transform: uppercase
 		margin-bottom: 10px
+		font-weight: 900
 	&-description
-		line-height: 10px
+		font-weight: 300
+		font-size: 20px
+		font-style: italic
 		span
 			text-transform: uppercase
 	&-button__wrap
@@ -246,6 +252,8 @@ body
 		justify-content: end
 		align-items: flex-end
 		height: 100%
+		display: flex
+		justify-content: center
 .slogan-button
 	text-transform: uppercase
 	font-size: 14px
@@ -351,6 +359,348 @@ body
 			&__descr
 				font-size: 14px
 				font-weight: 300
+.tutorial
+	padding-top: 150px
+	padding-bottom: 60px
+	&-description
+		text-align: center
+		font-size: 16px
+		font-weight: 300
+		font-style: italic
+.procedure
+	padding-top: 110px
+	padding-bottom: 50px
+	&-block
+		width: 270px
+		height: 168px
+		border: 10px solid transparent
+		box-shadow:  1px 1px  8px rgba(170, 170, 170, 0.49)
+		/* Обязательные условия*/
+		position: relative
+		overflow: hidden
+		&:hover img
+			opacity: 0.25
+			box-shadow: 3px 3px 5px #000
+			transform: scale(1.5, 1.5)
+		img
+			transition: all ease-in .5s
+			width: 100%
+			height: auto	
+		&__text
+			width: 255px
+			height: 168px
+			text-align: center
+			/* Обязательные условия*/
+			position: absolute
+			overflow: hidden
+			top: 0
+			left: 0
+			&:hover h3
+				opacity: 1
+				transform: translateY(0px)
+			h3
+				color: #4b4848
+				font-size: 20px
+				font-weight: 400
+				line-height: 40px
+				letter-spacing: 1px
+				margin-top: 10px
+				text-transform: uppercase
+				text-shadow: 1px 1px 1px #0d0a0b
+				background: rgba(248, 194, 71, 0.6)
+				/* Обязательные условия*/
+				transform: translateY(-100px)
+				transition: all ease-in .5s
+				opacity: 0
+				&:hover
+					opacity: 1
+					transform: translateY(0px)
+			&:hover p
+				opacity: 1
+				transform: translatex(0px)
+				transition: all  ease-in .5s
+			p
+				color: #fff
+				padding: 10px
+				margin-bottom: 25px
+				text-shadow: 1px 0 2px #000
+				background: rgba(105, 98, 82, 0.49)
+				   /* Обязательные условия*/
+				transform: translateY(120px)
+				transition: all.5s ease-in .1s
+				opacity: 0
+			&:hover a
+				cursor: pointer
+				opacity: 0
+				transition: opacity .3s ease-in .5s
+			a
+				color: #2e9beb
+				font-size: 18px
+				letter-spacing: 1px
+				text-decoration: none
+				background: rgba(245, 177, 22, 0.75)
+				text-shadow: 1px 1px 1px #1c3764
+				box-shadow: 1px 1px 3px #444
+				border: 1px solid rgba(167, 130, 48, 0.8)
+				border-radius: 5px
+				padding: 10px
+				   /* Обязательные условия*/
+				opacity: 0
+				transition: all ease-in .5s
+		&__before
+			position: relative
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: -120px
+				left: 0
+				background: url(../img/procedure/get.svg) center no-repeat
+				font-family: 'SegoeScript', san-serif
+				width: 298px
+				height: 116px 
+		&__after
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				bottom: -50px
+				left: -100px
+				background: url(../img/procedure/arrow-2.svg) center no-repeat
+				width: 170px
+				height: 50px 
+		&__act
+			position: relative
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: -50px
+				left: -100px
+				background: url(../img/procedure/arrow3.svg) center no-repeat
+				width: 170px
+				height: 50px 
+		&__succes
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				bottom: -50px
+				left: -100px
+				background: url(../img/procedure/arrow-2.svg) center no-repeat
+				width: 170px
+				height: 50px
+		&__succes
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: -50px
+				left: 40px
+				background: url(../img/procedure/arrow-end.svg) center no-repeat
+				width: 170px
+				height: 50px
+.contacts
+	padding-top: 140px
+	padding-bottom: 20px
+	&-description
+		text-align: center
+		font-size: 16px
+		font-weight: 300
+		font-style: italic
+		span
+			font-weight: 700
+			font-style: normal
+.contacts-form
+	padding-top: 50px
+	padding-bottom: 50px
+	text-align: center
+	background:#333333 url(../img/contacts/contacts-bg.jpg) center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	z-index: 1
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		background: rgba(0, 0, 0, 0.5)
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+	&__block
+		width: 100%
+		display: flex
+	&__label
+		color: $light
+	&__input
+		display: block
+		width: 60%
+		margin: auto
+		margin-bottom: 20px
+		padding-left: 20px
+		padding-top: 5px
+		padding-bottom: 5px
+		font-weight: 300
+		border-radius: 3px
+	&__textarea
+		width: 60%
+		min-height: 50px
+		padding-left: 20px
+		padding-top: 5px
+		margin-bottom: 20px
+	small
+		display: block
+		color: $light
+		font-size: 16px
+		margin-bottom: 20px
+.footer
+	background: #000
+	padding-top: 20px
+	padding-bottom: 20px
+	&-logo
+		img
+			width: 40%
+			height: auto
+			margin-bottom: 20px
+	&-menu
+		ul
+			display: flex
+			list-style: none
+			padding: 0
+			justify-content: space-between
+			li
+				a
+					font-size: 14px
+					text-decoration: none
+					color: $light
+					position: relative
+					&::after
+						display: block
+						position: absolute
+						content: ''
+						height: 2px
+						width: 0%
+						background-color: $light
+						transition: width .5s ease-in-out
+					&:hover::after
+						width: 100%
+	&-company
+		color: $light
+		font-weight: 300
+	&-contacts
+		color: $light
+		display: flex
+		flex-direction: column
+		align-items: end
+	&-adress
+		position: relative
+		margin-bottom: 20px
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: -40px
+			background: url(../img/footer/map.png) center no-repeat
+			width: 32px
+			height: 32px
+	&-phone
+		position: relative
+		padding-right: 10px
+		margin-bottom: 20px
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: -50px
+			background: url(../img/footer/phone.png) center no-repeat
+			width: 32px
+			height: 32px
+	&-icon
+		display: flex
+		&__youtube
+			position: relative
+			cursor: pointer
+			&::before
+				position: absolute
+				content: ''
+				display: block
+				border-radius: 0%
+				border: 0px solid $light
+				width: 0
+				height: 0
+				top: 2px
+				left: 44px
+				transition: .5s
+			&:hover::before
+				display: block
+				border-radius: 50%
+				border: 2px solid $light
+				width: 65px
+				height: 65px
+		&__instagram
+			position: relative
+			cursor: pointer
+			&::before
+				position: absolute
+				content: ''
+				display: block
+				border-radius: 0%
+				border: 0px solid $light
+				width: 0
+				height: 0
+				top: 2px
+				left: 44px
+				transition: .5s
+			&:hover::before
+				display: block
+				border-radius: 50%
+				border: 2px solid $light
+				width: 65px
+				height: 65px
+		&__drive
+			position: relative
+			cursor: pointer
+			&::before
+				position: absolute
+				content: ''
+				display: block
+				border-radius: 0%
+				border: 0px solid $light
+				width: 0
+				height: 0
+				top: 2px
+				left: 50px
+				transition: .5s
+			&:hover::before
+				display: block
+				border-radius: 50%
+				border: 2px solid $light
+				width: 65px
+				height: 65px
+		a
+			color: $light
+			font-size: 40px
+			padding-left: 60px
+
+		
+
+
+
+
+
+
+	
+
+		
 
 
 
