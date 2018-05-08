@@ -5,9 +5,4 @@ $(function() {
  		 pause: false,
  		 fade: true
 	});
-
-    $('#galleryherepls').galereya({
-
-    });
-
 });
