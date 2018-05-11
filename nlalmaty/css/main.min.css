@@ -2403,19 +2403,18 @@ body {
 .hamburger {
   display: none; }
 
-.carousel-item img {
+.carousel-item {
   height: 100vh; }
-
-.carousel-item::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; }
+  .carousel-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
 
 .carousel-caption {
   top: 35%;
@@ -3282,26 +3281,171 @@ body {
           .navigation ul li a:hover {
             border-top: 4px solid #fff;
             border-bottom: 4px solid #fff; }
-  .carousel-item img {
+  .carousel-item {
     height: 100vh; }
-  .carousel-item::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; }
+    .carousel-item img {
+      height: 100%; }
   .carousel-title {
-    margin-bottom: 70px;
-    font-weight: 900;
-    font-size: 20px;
-    text-transform: uppercase; }
+    font-size: 20px; }
   .carousel-description {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .partnerships-block__coffee {
+    border-bottom: 0; }
+  .partnerships-block__mersedes {
+    border-bottom: 0; }
+  .partnerships-block__peco {
+    border-bottom: 0; }
+  .partnerships-block__mts {
+    border-bottom: 0; }
+  .partnerships-block__alfa {
+    border-bottom: 0; }
+  .partnerships-block__xfit {
+    border-bottom: 0; }
+  .company-title {
+    padding-top: 35px;
+    text-align: center; }
+  .company-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .company-items__item {
+      width: 100%; }
+  .slogan-text {
+    margin-top: 0px;
+    font-size: 25px; }
+  .slogan-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 15px; }
+    .section-title__icon {
+      position: relative; }
+      .section-title__icon img {
+        width: 10%;
+        height: 10%; }
+      .section-title__icon::before {
+        display: none; }
+      .section-title__icon::after {
+        display: none; }
+  .production {
+    padding-top: 15px;
+    padding-bottom: 20px; }
+    .production-text {
+      max-width: 90%; }
+  .filter {
+    display: none;
+    margin-bottom: 0; }
+  .grid-wrapper {
+    margin-left: 6%; }
+  .methods {
+    padding-bottom: 50px; }
+    .methods-description {
+      margin-bottom: 40px; }
+    .methods-text__title {
+      padding-left: 0;
+      margin-bottom: 10px;
+      text-align: center; }
+    .methods-block__button {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .numbers {
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    .numbers-box {
+      display: none; }
+    .numbers-wrapper-right {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; }
+    .numbers-wrapper-left {
+      text-align: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .numbers-wrapper-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .tutorial {
+    padding-top: 76px;
+    padding-bottom: 60px; }
+    .tutorial-description {
+      padding: 0 15px; }
+  .procedure {
+    padding-top: 110px;
+    padding-bottom: 50px; }
+    .procedure-block {
+      margin: auto;
+      margin-bottom: 20px; }
+      .procedure-block__after:after {
+        display: none; }
+      .procedure-block__act:before {
+        display: none; }
+      .procedure-block__succes:after {
+        display: none; }
+      .procedure-block__succes:before {
+        display: none; }
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .contacts-form__input {
+    width: 80%; }
+  .contacts-form__textarea {
+    width: 80%; }
+  .footer {
+    background: #000; }
+    .footer-contacts {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .footer-icon {
+      width: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+      .footer-icon__youtube {
+        position: relative;
+        cursor: pointer; }
+        .footer-icon__youtube::before {
+          display: none; }
+        .footer-icon__youtube:hover::before {
+          display: none; }
+      .footer-icon__instagram::before {
+        display: none; }
+      .footer-icon__instagram:hover::before {
+        display: none; }
+      .footer-icon__drive::before {
+        display: none; }
+      .footer-icon__drive:hover::before {
+        display: none; }
+    .footer a {
+      padding-left: 0px; } }
 
 /*==========  Mobile First  ==========*/
