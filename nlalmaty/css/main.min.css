@@ -2400,6 +2400,9 @@ body {
     .navigation-icon a {
       color: #fff; }
 
+.hamburger {
+  display: none; }
+
 .carousel-item img {
   height: 100vh; }
 
@@ -2471,11 +2474,13 @@ body {
   .partnerships-block__coffee {
     background: url(../img/Partners/coffee1.jpg) center no-repeat;
     min-height: 113px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    cursor: pointer; }
   .partnerships-block__mersedes {
     background: url(../img/Partners/mercedes1.jpg) center no-repeat;
     min-height: 113px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    cursor: pointer; }
   .partnerships-block__peco {
     background: url(../img/Partners/peco1.jpg) center no-repeat;
     min-height: 113px;
@@ -2483,15 +2488,18 @@ body {
   .partnerships-block__mts {
     background: url(../img/Partners/mts1.png) center no-repeat;
     min-height: 113px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    cursor: pointer; }
   .partnerships-block__alfa {
     background: url(../img/Partners/Alfa1.png) center no-repeat;
     min-height: 113px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    cursor: pointer; }
   .partnerships-block__xfit {
     background: url(../img/Partners/x-feat1.jpg) center no-repeat;
     min-height: 113px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    cursor: pointer; }
 
 .company-title {
   padding-top: 20px;
@@ -3235,4 +3243,65 @@ body {
   margin-top: 50%; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 575.98px) {
+  .hamburger {
+    display: block; }
+  .mobile-hidden {
+    display: none; }
+  .navigation {
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    background-color: black; }
+    .navigation-toggle {
+      position: absolute;
+      top: -55px;
+      right: 0px; }
+    .navigation-menu {
+      text-align: center;
+      position: relative; }
+    .navigation ul {
+      margin-top: 10px;
+      padding: 0;
+      list-style-type: none;
+      display: none; }
+      .navigation ul li {
+        display: block; }
+        .navigation ul li a {
+          text-transform: uppercase;
+          color: #fff;
+          display: block;
+          font-size: 14px;
+          text-decoration: none;
+          font-weight: 700;
+          margin: 0 16px;
+          border-top: 4px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+          padding: 20px 0; }
+          .navigation ul li a:hover {
+            border-top: 4px solid #fff;
+            border-bottom: 4px solid #fff; }
+  .carousel-item img {
+    height: 100vh; }
+  .carousel-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .carousel-title {
+    margin-bottom: 70px;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .carousel-description {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px; } }
+
 /*==========  Mobile First  ==========*/

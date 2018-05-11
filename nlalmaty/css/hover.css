@@ -365,7 +365,7 @@
   }
 }
 .hvr-bob {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -2510,7 +2510,7 @@
 
 /* Float Shadow */
 .hvr-float-shadow {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -3257,7 +3257,7 @@
   }
 }
 .hvr-icon-pulse {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -3294,7 +3294,7 @@
   }
 }
 .hvr-icon-pulse-grow {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -3473,7 +3473,7 @@
 
 /* Icon Rotate */
 .hvr-icon-rotate {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
