@@ -8,11 +8,236 @@
 		
 // ≥992px
 +media-breakpoint-down(md)
-
+	.mobile-hidden
+		display: none
 
 // ≥768px
 +media-breakpoint-down(sm)
-
+	.mobile-show
+		display: block
+	.hamburger
+		display: block
+		padding: 0
+	.mobile-hidden
+		display: none
+	.navigation
+		padding-top: 30px
+		position: absolute
+		width: 100%
+		z-index: 20
+		background-color: rgba(0,0,0,1)
+		&-logotype
+			img
+				width: 170px
+				max-height: 90px
+		&-toggle
+			position: relative
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-end
+		&-menu
+			text-align: center
+			position: relative
+		ul
+			margin-top: 10px
+			padding: 0
+			list-style-type: none
+			display: none
+			li
+				display: block
+				a
+					text-transform: uppercase
+					color: $light
+					display: block
+					font-size: 14px
+					text-decoration: none
+					font-weight: 700
+					margin: 0 16px
+					border-top: 4px solid rgba(0,0,0,0.1)
+					border-bottom: 4px solid rgba(0,0,0,0.1)
+					padding: 20px 0
+					transition: all .6s
+					&:hover
+						padding: 20px 0
+						border-top: 4px solid $light
+						border-bottom: 4px solid $light
+	.carousel-item
+		height: 100vh
+		img
+			height: 100%
+	.carousel-title
+		font-size: 30px
+	.carousel-description
+		font-size: 20px
+	.partnerships
+		&-title
+		&-block
+			&__coffee
+				border-bottom: 0
+			&__mersedes
+				border-bottom: 0
+			&__peco
+				border-bottom: 0
+			&__mts
+				border-bottom: 0
+			&__alfa
+				border-bottom: 0
+			&__xfit
+				border-bottom: 0
+	.company
+		&-title
+			padding-top: 35px
+			text-align: center	
+		&-items
+			flex-direction: column
+			&__item
+				width: 100%
+	.slogan
+		&-text
+			margin-top: 0px
+			font-size: 25px
+		&-title
+			text-align: center
+		&-description
+			font-size: 16px
+			text-align: center
+			margin-bottom: 20px
+	.section-title
+		font-size: 20px
+		margin-bottom: 15px
+		&__icon
+			position: relative
+			img
+				width: 10%
+				height: 10%
+			&::before
+				display: none
+			&::after
+				display: none
+	.production
+		padding-top: 15px
+		padding-bottom: 20px
+		&-text
+			max-width: 90%
+	.filter
+		display: none
+		margin-bottom: 0
+	.grid-wrapper
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+	.grid
+		width: 90%
+	.methods
+		padding-bottom: 50px
+		&-description
+			margin-bottom: 40px
+		&-text
+			&__title
+				padding-left: 0
+				margin-bottom: 10px
+				text-align: center	
+		&-block
+			&__button
+				justify-content: center
+	.numbers
+		padding-top: 50px
+		padding-bottom: 30px
+		&-box
+			display: none
+		&-wrapper
+			&-right
+				align-items: center
+				text-align: center
+			&-left
+				text-align: center
+				align-items: center
+			&-block
+				display: flex
+				flex-direction: column
+				align-items: center
+	.tutorial
+		padding-top: 76px
+		padding-bottom: 60px
+		&-description
+			padding: 0 15px
+	.procedure
+		padding-top: 110px
+		padding-bottom: 50px
+		&-block
+			margin: auto
+			margin-bottom: 20px
+			&__after
+				&:after
+					display: none
+			&__act
+				&:before
+					display: none
+			&__succes
+				&:after
+					display: none
+			&__succes
+				&:before
+					display: none
+	.contacts
+		padding-top: 20px
+		padding-bottom: 20px
+	.contacts-form
+		&__input
+			width: 80%
+		&__textarea
+			width: 80%
+	.footer
+		background: #000
+		&-contacts
+			align-items: center
+		&-social
+			width: 100%
+		&-phone
+			padding-left: 13px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: -37px
+				background: url(../img/footer/phone.png) center no-repeat
+				width: 32px
+				height: 32px
+		&-icon
+			width: 100%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-around
+			&__youtube
+				position: relative
+				cursor: pointer
+				&::before
+					display: none
+				&:hover::before
+					display: none
+			&__instagram
+				&::before
+					display: none
+				&:hover::before
+					display: none
+			&__drive
+				&::before
+					display: none
+				&:hover::before
+					display: none
+		a
+			padding-left: 0px
 
 // ≥576px
 +media-breakpoint-down(xs)
