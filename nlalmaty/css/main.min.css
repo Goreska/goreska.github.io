@@ -2669,6 +2669,23 @@ body {
           justify-content: center;
   margin-bottom: 20px; }
 
+.grid-wrapper {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.grid {
+  width: 90%; }
+
 .product-button {
   text-align: center;
   padding: 10px 15px;
@@ -3268,6 +3285,9 @@ body {
     width: 100%;
     z-index: 20;
     background-color: black; }
+    .navigation-logotype img {
+      width: 170px;
+      max-height: 90px; }
     .navigation-toggle {
       position: relative;
       display: -webkit-flex;
@@ -3368,7 +3388,20 @@ body {
     display: none;
     margin-bottom: 0; }
   .grid-wrapper {
-    margin-left: 6%; }
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .grid {
+    width: 90%; }
   .methods {
     padding-bottom: 50px; }
     .methods-description {
