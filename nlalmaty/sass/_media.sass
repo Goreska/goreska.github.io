@@ -16,8 +16,11 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.mobile-show
+		display: block
 	.hamburger
 		display: block
+		padding: 0
 	.mobile-hidden
 		display: none
 	.navigation
@@ -27,9 +30,13 @@
 		z-index: 20
 		background-color: rgba(0,0,0,1)
 		&-toggle
-			position: absolute
-			top: -55px
-			right: 0px
+			position: relative
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-end
 		&-menu
 			text-align: center
 			position: relative
@@ -51,7 +58,9 @@
 					border-top: 4px solid rgba(0,0,0,0.1)
 					border-bottom: 4px solid rgba(0,0,0,0.1)
 					padding: 20px 0
+					transition: all .6s
 					&:hover
+						padding: 20px 0
 						border-top: 4px solid $light
 						border-bottom: 4px solid $light
 	.carousel-item
@@ -178,6 +187,19 @@
 		background: #000
 		&-contacts
 			align-items: center
+		&-social
+			width: 100%
+		&-phone
+			padding-left: 13px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: -37px
+				background: url(../img/footer/phone.png) center no-repeat
+				width: 32px
+				height: 32px
 		&-icon
 			width: 100%
 			display: -webkit-flex
