@@ -2356,10 +2356,11 @@ body {
 
 .navigation {
   padding-top: 30px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 20;
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: black;
+  trasition: all .5s; }
   .navigation-logotype img {
     width: 100%;
     max-height: 90px; }
@@ -2405,6 +2406,12 @@ body {
 
 .hamburger {
   display: none; }
+
+/* Scroll - динамичная смена размера navigation */
+.scroll {
+  padding-top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  trasition: all .5s; }
 
 .carousel-item {
   height: 100vh; }
@@ -3292,6 +3299,8 @@ body {
     display: none; }
   .tablet-show {
     display: block; }
+  .navigation {
+    position: absolute; }
   .carousel-title {
     margin-bottom: 100px;
     font-weight: 900;

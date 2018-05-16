@@ -1,5 +1,15 @@
 $(function() {
 
+  /*Navigation Fixed*/
+      $(window).scroll(function(){
+        if ($(window).scrollTop() > 200) {
+        $('.navigation').addClass('scroll');
+        }
+        else {
+           $('.navigation').removeClass('scroll')
+        }
+      });
+
 	$('.carousel').carousel({
  		 interval: 5000,
  		 pause: false,
@@ -31,4 +41,5 @@ $(function() {
   $('.hamburger').on('click', function() {
         $('.navigation-menu ul').toggle();
       });
+
 });
