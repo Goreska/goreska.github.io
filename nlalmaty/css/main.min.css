@@ -2361,6 +2361,8 @@ body {
   z-index: 20;
   background-color: black;
   trasition: all .5s; }
+  .navigation-logotype a {
+    outline: none !important; }
   .navigation-logotype img {
     width: 100%;
     max-height: 90px; }
@@ -2373,6 +2375,7 @@ body {
       .navigation-menu ul li {
         display: inline-block; }
         .navigation-menu ul li a {
+          outline: none !important;
           -webkit-transition: 0.5s ease;
           -o-transition: 0.5s ease;
           transition: 0.5s ease;
@@ -2632,7 +2635,8 @@ body {
 
 .slogan-button {
   text-transform: uppercase;
-  font-size: 14px; }
+  font-size: 14px;
+  outline: none !important; }
 
 .about {
   background-color: #fff;
@@ -2649,7 +2653,8 @@ body {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-width: 0; }
 
 .production {
   background-color: #fff;
@@ -3124,7 +3129,8 @@ body {
             align-items: end; }
   .footer-adress {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-right: 27px; }
     .footer-adress::before {
       content: '';
       display: block;
@@ -3136,8 +3142,8 @@ body {
       height: 32px; }
   .footer-phone {
     position: relative;
-    padding-right: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-right: 27px; }
     .footer-phone::before {
       content: '';
       display: block;
@@ -3147,6 +3153,18 @@ body {
       background: url(../img/footer/phone.png) center no-repeat;
       width: 32px;
       height: 32px; }
+  .footer-youtube {
+    -webkit-transform: translateX(-81%);
+        -ms-transform: translateX(-81%);
+            transform: translateX(-81%); }
+  .footer-instagram {
+    -webkit-transform: translateX(-80%);
+        -ms-transform: translateX(-80%);
+            transform: translateX(-80%); }
+  .footer-car {
+    -webkit-transform: translateX(-70%);
+        -ms-transform: translateX(-70%);
+            transform: translateX(-70%); }
   .footer-icon {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3165,7 +3183,7 @@ body {
         width: 0;
         height: 0;
         top: 2px;
-        left: 44px;
+        left: 15px;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s; }
@@ -3189,7 +3207,7 @@ body {
         width: 0;
         height: 0;
         top: 2px;
-        left: 44px;
+        left: 17px;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s; }
@@ -3213,7 +3231,7 @@ body {
         width: 0;
         height: 0;
         top: 2px;
-        left: 50px;
+        left: 18px;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s; }
@@ -3755,8 +3773,23 @@ body {
               align-items: center; }
     .footer-social {
       width: 100%; }
+    .footer-youtube {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+    .footer-instagram {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+    .footer-car {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+    .footer-adress {
+      margin-left: 52px; }
     .footer-phone {
-      padding-left: 13px; }
+      padding-left: 13px;
+      margin-left: 52px; }
       .footer-phone::before {
         content: '';
         display: block;
@@ -4012,7 +4045,12 @@ body {
               align-items: center; }
     .footer-social {
       width: 100%; }
+    .footer-adress {
+      margin-right: 0px;
+      margin-left: 20px; }
     .footer-phone {
+      margin-right: 0px;
+      margin-left: 20px;
       padding-left: 13px; }
       .footer-phone::before {
         content: '';
@@ -4023,6 +4061,18 @@ body {
         background: url(../img/footer/phone.png) center no-repeat;
         width: 32px;
         height: 32px; }
+    .footer-youtube {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+    .footer-instagram {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
+    .footer-car {
+      -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+              transform: translateX(0%); }
     .footer-icon {
       width: 100%;
       display: -webkit-flex;

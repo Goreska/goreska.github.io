@@ -48,14 +48,14 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-12 col-lg-10 col-xl-8">
-					<div class="navigation-menu tablet-show">
+					<div id="navigation-menu" class="navigation-menu tablet-show">
 						<nav>
 							<ul>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Продукция NL</a></li>
-								<li><a href="#">Наша методика</a></li>
-								<li><a href="#">Статистика</a></li>
-								<li><a href="#">Стать сетевиком</a></li>
+								<li><a class="slowly" href="#about">О компании</a></li>
+								<li><a class="slowly" href="#production">Продукция NL</a></li>
+								<li><a class="slowly" href="#methods">Наша методика</a></li>
+								<li><a class="slowly" href="#statistics">Статистика</a></li>
+								<li><a class="slowly" href="#contacts">Стать сетевиком</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -63,20 +63,20 @@
 				<div class="col-2 col-md-2 col-lg-2 col-xl-2 mobile-hidden">
 					<div class="navigation-icon">
 						<div class="navigation-icon__youtube">
-							<a href="#"><i class="fa fa-youtube"></i></a>
+							<a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
 						</div>
 						<div class="navigation-icon__instagram">
-							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://www.instagram.com/?hl=ru"><i class="fa fa-instagram"></i></a>
 						</div>
 						<div class="navigation-icon__drive">
-							<a href="#"><i class="fa fa-car"></i></a>
+							<a target="_blank" href="https://www.drive2.ru/"><i class="fa fa-car"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="MagicCarousel" class="carousel slide" data-ride="carousel" class="position">
+	<div id="MagicCarousel" class="carousel slide position" data-ride="carousel">
 		<ol class="carousel-indicators">
     		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -263,16 +263,18 @@
 				</div>
 				<div class="col-12 col-sm-6">
 					<div class="slogan-button__wrap">
-						<button class="button slogan-button hvr-bounce-in">
-							<span>Хочу стать сетевиком!</span>
-						</button>
+						<form action="#tutorial" class="slowly">
+							<button class="button slogan-button hvr-bounce-in">
+								<span>Хочу стать сетевиком!</span>
+							</button>
+						</form>	
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="about">
+	<div id="about" class="about">
 		<div class="container">
 			<h2 class="section-title">
 				О КОМПАНИИ NL INTERNATIONAL <br>
@@ -282,13 +284,13 @@
 			</div>
 			<div class="about-video">
 				<div class="about-video__item">
-					<iframe width="100%" height="620px" src="https://www.youtube.com/embed/ZaRzRwreLu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/ZaRzRwreLu8" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="production">
+	<div id="production" class="production">
 		<div class="container">
 			<h2 class="section-title">
 				Продукция NL
@@ -470,7 +472,7 @@
 	</div>
 </div>
 
-<div class="methods">
+<div id="methods" class="methods">
 	<div class="container">
 		<h2 class="section-title">
 			Наша методика
@@ -504,9 +506,10 @@
 							</div>
 							<!-- /.methods-block__img -->
 							<div class="methods-block__button">
-								<button class="button methods-button hvr-bounce-in">
-									Покажи мне материалы!
-								</button>
+								
+									<button class="button methods-button hvr-bounce-in">
+										Покажи мне материалы!
+									</button>
 							</div>
 							<!-- /.methods-block__button -->
 						</div>
@@ -516,7 +519,7 @@
 		</div>
 	</div>
 
-	<div class="statistics">
+	<div id="statistics" class="statistics">
 		<div class="container">
 			<h2 class="section-title">
 				Статистика нашей команды
@@ -592,7 +595,7 @@
 		</div>
 	</div>
 
-	<div class="tutorial">
+	<div id="tutorial" class="tutorial">
 		<div class="container">
 			<h2 class="section-title">
 				Как стать профессионалом в компании NL International?
@@ -673,7 +676,7 @@
 	<!-- /.procedure -->
 	</div>
 
-	<div class="contacts">
+	<div id="contacts" class="contacts">
 		<div class="container">
 			<h2 class="section-title">
 				Хочу стать сетевиком
@@ -700,9 +703,9 @@
 			<div class="contacts-form__main">
 				<form action="#" class="contacts-form_block">
 					<label class="contacts-form__label" for="name">Имя</label>
-					<input type="name" class="contacts-form__input" placeholder="Антон Безбородов">
+					<input id="name" type="text" class="contacts-form__input" placeholder="Имя">
 					<label class="contacts-form__label" for="phone">Телефон</label>
-					<input type="phone" class="contacts-form__input" placeholder="+7 777 399 77 88">
+					<input id="phone" type="text" class="contacts-form__input" placeholder="Телефон">
 					<textarea placeholder="Ваше сообщение" class="contacts-form__textarea"></textarea>
 					<small>Проверь правильность заполнения формы для того чтобы мы могли с вами связаться!</small>
 					<button class="button contacts-form__button hvr-bounce-in">
@@ -727,11 +730,11 @@
 						<!-- /.footer-logo -->
 						<div class="footer-menu tablet-show mobile-hidden">
 							<ul>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Продукция</a></li>
-								<li><a href="#">Методика</a></li>
-								<li><a href="#">Статистика</a></li>
-								<li><a href="#">Стать сетевиком</a></li>
+								<li><a class="slowly" href="#about">О компании</a></li>
+								<li><a class="slowly" href="#production">Продукция</a></li>
+								<li><a class="slowly" href="#methods">Методика</a></li>
+								<li><a class="slowly" href="#statistics">Статистика</a></li>
+								<li><a class="slowly" href="#contacts">Стать сетевиком</a></li>
 							</ul>
 						</div>
 						<!-- /.footer-menu -->
@@ -753,13 +756,13 @@
 						<div class="footer-social">
 							<div class="footer-icon">
 								<div class="footer-icon__youtube">
-									<a href="#"><i class="fa fa-youtube"></i></a>
+									<a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube footer-youtube"></i></a>
 								</div>
 								<div class="footer-icon__instagram">
-									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a target="_blank" href="https://www.instagram.com/?hl=ru"><i class="fa fa-instagram footer-instagram"></i></a>
 								</div>
 								<div class="footer-icon__drive">
-									<a href="#"><i class="fa fa-car"></i></a>
+									<a target="_blank" href="https://www.drive2.ru/"><i class="fa fa-car footer-car"></i></a>
 								</div>
 							</div>
 						</div>
@@ -770,11 +773,13 @@
 		</div>
 	</footer>
 	
-	<script src="js/scripts.min.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min"><\/script>')</script> 
+		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script> 
+	<script src="js/scripts.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="libs/smooth/smooth-scroll.js"></script>
 </body>
 </html>
