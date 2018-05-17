@@ -46,22 +46,10 @@ $(function() {
       /*Отменяем стандартную обработку нажатия по ссылке.*/
       event.preventDefault();
       /*Забираем идентификатор блока с атрибута href.*/
-      var id = $(this).attr('href'),
+      var id = $(this).attr('href') || $(this).attr('data-target'),
       /*Узнаём высоту от начала страницы до блока, на который ссылается якорь.*/
       top = $(id).offset().top;
       /*Анимируем переход на расстояние - top за 1000ms.*/
       $('body,html').animate({scrollTop: top}, 1200);
     });
-
-        $(".slowly").on("click", function (event) {
-      /*Отменяем стандартную обработку нажатия по ссылке.*/
-      event.preventDefault();
-      /*Забираем идентификатор блока с атрибута href.*/
-      var id = $(this).attr('form'),
-      /*Узнаём высоту от начала страницы до блока, на который ссылается якорь.*/
-      top = $(id).offset().top;
-      /*Анимируем переход на расстояние - top за 1000ms.*/
-      $('body,html').animate({scrollTop: top}, 1200);
-    });
-
 });
