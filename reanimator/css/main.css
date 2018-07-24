@@ -1,0 +1,875 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+}
+.hidden {
+	display: none;
+}
+#hidden_form {
+    background-color: #F7F7F7;
+    padding: 25px 30px;
+    border: 5px solid #CBE6A3;
+    border-radius: 5px;
+    max-width: 420px;
+    margin: auto;
+    position: relative;
+    
+}
+
+h2 {
+    color:black;
+    
+}
+
+#hidden_form h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-family: "BebasBold", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #050505;
+    line-height: 32px;
+}
+
+#hidden_form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.down {
+    margin-top: 16px;
+}
+
+.down2 {
+    margin-top: 16px;
+}
+
+#hidden_form input {
+    border: 1px solid #d9d9d9;
+    display: block;
+    height: 40px;
+    line-height: 37px;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.06)inset;
+    box-shadow: 0 0 20px rgba(0,0,0,.06)inset;
+    width: 100%;
+    text-indent: 10px;
+}
+
+#hidden_form textarea {
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+    text-indent:10px;
+}
+
+#hidden_form .button {
+    margin: 25px 0 7px 105px;
+}
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+}
+
+header {
+    background-image: url(http://reanimator48.ru/img/top.jpeg);
+    min-height: 620px;
+    background-repeat: repeat-x;
+    background-position: top center;
+    position: relative;
+    font-family: "BebasBold";
+}
+.s_menu {
+    margin-left: 200px;
+}
+
+.nav_top_menu .small_menu {
+    display: none;
+    font-size: 22px;
+    height: 62px;
+    line-height: 62px;
+}
+
+header a {
+    color: #fff;
+}
+
+.top_line {
+    min-height: 97px;
+    -webkit-box-shadow: rgba(255,255,255,.3)0 0 0 1px; 
+    box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+    width: 100%;
+    background-color: rgba(0,0,0,.60);
+    padding: 22px 0;
+}
+
+.top_line a {
+     font-size: 21px;
+    border-bottom: #fff dashed 1px;
+}
+
+
+.top_adr {
+    padding-left: 50px;
+    background-image: url(http://reanimator48.ru/img/top-map.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    line-height: 26px;
+}
+
+.top_adr strong {
+    display: block;
+    color: #d12f22;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+}
+.top_line .logo {
+    border-bottom: none;
+    position: absolute;
+    margin-top: -18px;
+}
+
+.top_line .logo:hover {
+    border-bottom: none;
+}
+
+.logo_wrap {
+    position: relative;
+    width: 188px;
+    margin: auto;
+}
+
+ .ta_right {
+    background-image: none;
+    padding-left: 0;
+    text-align: right;
+}
+
+.ta_right span {
+    color:#fff;
+}
+
+header h1 {
+    text-align: center;
+    color:#fff;
+    margin-top: 150px;
+    font-size: 60px;
+    text-shadow: 27px 11px 12px rgba(126, 150, 150, 1);
+    font-family: BebasRegular;
+}
+.button {
+    display: inline-block;
+    background-color: #D12F22;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+    padding: 0 25px;
+    font-size: 25px;
+    border-bottom: #AC160A 4px solid;
+    color: #fff;
+    font-family: "BebasBold";
+}
+
+.button:hover {
+    background-color: #e64437;
+}
+
+.button:active {
+    background-color: #b81609;
+}
+
+ .price {
+    padding-left: 50px;
+    background-image: url(http://reanimator48.ru/img/prajs_list_ikonka.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    display:none;
+    
+}
+
+
+.button_top {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+}
+
+.nav_top_menu {
+    height: 62px;
+    background-color: #242424;
+    -webkit-box-shadow: rgba(255,255,255,.3)0 0 0 1px; 
+    box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+    font-family: "BebasRegular";
+    text-transform: uppercase;
+}
+
+.nav_top_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav_top_menu a {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 28px 0 72px;
+    display: block;
+    line-height: 62px;
+    border-left: #3B3B3B 1px solid;
+    background-image: url(http://reanimator48.ru/img/top_menu_iconset.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+ 
+.nav_top_menu li {
+    float: left;
+}
+
+.nav_top_menu li.active,
+.nav_top_menu li:hover{
+    background-color: #050505;
+}
+
+.nav_top_menu li:nth-child(1) a {
+    background-position: 33px 20px;
+}
+
+.nav_top_menu li:nth-child(2) a {
+    background-position: 35px -72px;
+}
+
+.nav_top_menu li:nth-child(3) a {
+    background-position: 28px -170px;
+}
+
+.nav_top_menu li:nth-child(4) a {
+    background-position: 28px -269px;
+}
+
+.waranty {
+    float: right;
+    color: #fff;
+    cursor: default;
+    font-size: 15px;
+    border: 3px  solid #fff;
+    border-radius: 3px;
+    padding: 3px 5px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-right: 50px;
+}
+
+.w_left,
+.w_right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.w_left {
+    font-family: "BebasBold";
+    font-size: 20px;
+    float: left;
+    margin: 10px;
+}
+
+.w_right {
+    font-family: "RobotoCondensedRegular";
+}
+
+.main_cats {
+    background: #191919;
+    padding: 40px 0  40px 0;
+}
+
+.main_cats h2,
+.content_bg,
+.contacts    {
+    color:#c9c9c9;
+    font-family: "BebasRegular";
+    font-size: 40px;
+    text-align: center;
+}
+
+.main_cats h2 strong {
+    color: #fff;
+}
+
+section h2,
+.content_bg,
+.contacts {
+    position: relative;
+}
+
+
+.main_cats h2::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/header_img.png);
+    top: 19px;
+    margin-left: -68px;
+}
+
+.main_cats h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/header_img.png);
+    background-position: -50px 0;
+    top: 19px;
+    margin-left: 20px;
+}
+
+.mc_item {
+    border: #353535 1px  solid;
+    border-radius: 2px;
+    width: 158px;
+}
+
+.mc_item_wrap  {
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+}
+
+.mc_item_wrap:nth-child(1) {
+    margin-left: 0px;
+}
+
+
+.mc_wrap {
+    text-align: center;
+    padding: 0px;
+    position: relative;
+}
+
+
+
+.mc_item_wrap a {
+    color: #fff;
+    pointer-events:auto;
+}
+
+.mc_item span {
+    display: block;
+    height: 85px;
+    width: 130px;
+    background-image: url(http://reanimator48.ru/img/cuts_iconset.png);
+    margin: 10px auto;
+}
+
+.mc_item_wrap:nth-child(1) span {
+    background-position: 13px 0;
+}
+
+.mc_item_wrap:nth-child(2) span {
+    background-position: -115px 0;
+}
+
+.mc_item_wrap:nth-child(3) span {
+    background-position: -238px 0;
+}
+
+.mc_item_wrap:nth-child(4) span {
+    background-position: -374px 0;
+}
+
+.mc_item_wrap:nth-child(5) span {
+    background-position: -506px 0;
+}
+
+.mc_item_wrap:nth-child(6) span {
+    background-position: -630px 0;
+}
+
+.mc_item h3 {
+    font-family: "BebasBold";
+    font-weight: normal;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.mc_item a:hover h3,
+.mc_item_wrap.active h3 {
+    text-decoration: underline;
+    
+}
+
+.mc_item_wrap.active,
+.mc_item_wrap:hover {
+    background-color: #2A2A2A;
+}
+
+.mc_toggle {
+    border-color: #212121;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    background-image: url(http://reanimator48.ru//img/mc_arr.png);
+    background-repeat: no-repeat;
+    background-position: 73px 10px;
+}
+
+
+.mc_item_wrap.active .mc_toggle,
+.mc_item_wrap:hover .mc_toggle {
+    background-color: #353535;
+    background-position: -118px 10px;
+}
+
+body .mc_wrap .mc_item_wrap > ul {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    list-style-type: none;
+    font-size: 21px;
+    background-color: #353535;
+    margin-top: 20px;
+    z-index: 10;
+    display: none;
+    left: 0;
+}
+
+.mc_item_wrap.active> ul li {
+    display: inline-block;
+    font-family: "BebasRegular";
+    
+}
+
+.mc_item_wrap.active> ul li a {
+    padding: 0 15px;
+    text-decoration: underline;
+    pointer-events:auto;
+}
+
+.mc_item_wrap.active> ul li a:hover {
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.mc_item_wrap_af {
+    content: "";
+    width: 20px;
+    height: 10px;
+    background-image: url(http://reanimator48.ru/img/mc_children_arrow.png);
+    position: absolute;
+    margin: 11px 69px;
+    display: none;
+}
+
+
+.mc_b_w {
+    text-align: center;
+    margin-top: 29px;
+}
+.mc_b_w .button {
+    margin-bottom: 20px;
+}
+
+.content_bg {
+    background-color: #E9E9E9;
+    color: #050505;
+}
+
+
+.content_bg h2.art::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/body_img.png);
+    top: 34px;
+    margin-left: -68px;
+}
+
+.content_bg h2.art::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/body_img.png);
+    background-position: -50px 0;
+    top: 34px;
+    margin-left: 20px;
+}
+
+.font {
+    margin-top: 70px;
+    margin-left: -53px;
+}
+
+.font_7 {
+    font-size: 25px;
+    text-align: left;
+
+}
+
+.font_8  {
+    font-size: 25px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.photo .lider img   {
+    width: 100%;
+    height: 355px;
+    margin-top: -29px;
+    border: 4px solid #d6d6d6;
+}
+
+.photo .butik img   {
+    width: 100%;
+    height: 355px;
+    border: 4px solid #d6d6d6;
+}
+
+/* Секция с отзывами*/
+
+.s_rew {
+    background-image: url(http://reanimator48.ru/img/o_bg.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 615px;
+    background-position: top center;
+    background-size: cover;
+}
+
+.otzy {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: "BebasBold";
+    text-align: center;
+    margin-top: 50px;
+}
+
+.review_item {
+ color: #FFFFFF;
+    text-align: center;
+}
+
+.img_wrap {
+    text-align: center;
+}
+
+.img_wrap > img {
+    width: 165px;
+    display: inline-block;
+    border-radius: 50%;
+    border: #191919 10px solid;
+}
+
+.review_item h4 {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.review_item p  {
+    margin: auto;
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+     font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+
+
+
+.owl-nav div {
+    width: 34px;
+    height: 140px;
+    background-image: url(http://reanimator48.ru/img/lr.png);
+    top: 20px;
+    position: absolute; 
+    opacity: .6;
+}
+
+.owl-nav div:hover {
+    opacity: 1;
+}
+
+.owl-nav .owl-next {
+    right: 0;
+    background-position: top right;
+}
+
+.hr    {
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    margin: auto;
+   
+}
+
+.contacts {
+    background-color: #ffffff;
+}
+
+.cont {
+    color: black;
+}
+
+
+.contacts h2.cont::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/body_img.png);
+    top: 34px;
+    margin-left: -68px;
+}
+
+.contacts h2.cont::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/body_img.png);
+    background-position: -50px 0;
+    top: 34px;
+    margin-left: 20px;
+}
+
+.google_map {
+    width: auto;
+    text-align: center;
+}
+
+.solution {
+    font-family: "BebasBold";
+    font-size: 31px;
+}
+
+.font_form {
+    font-family: "BebasRegular";
+    font-size: 24px;
+}
+
+#left {
+    margin-left: 176px;
+}
+
+
+.container .form_down {
+    margin-top: 21px;
+}
+
+
+.col-md-6.service {
+    padding-left: 149px;
+}
+    
+.container.form_down {
+    margin-bottom: 36px;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 28px 0 35px;
+    font-family: "BebasBold";
+    font-size: 20px;
+        
+}
+
+footer a {
+    color: #aaa;
+    padding: 0 38px;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    float: left;
+}
+
+.col-md-2.countlive > img {
+    display: none;
+}
+
+.last {
+    min-height: 98px;
+}
+
+.logo_small>img {
+    height: 82px;
+    
+}
+
+.logo_small> a {
+    text-decoration: none;
+    
+}
+
+.usl_zag {
+    color:#000000;
+    font-family: "BebasRegular";
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.image_w {
+    max-width: 100%;
+    height: auto;
+    float: none;
+}
+
+.image_w p {
+    text-align: center;
+}
+
+.main_cat h2  {
+    color:#c9c9c9;
+    font-family: "BebasRegular";
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.main_cat {
+    background: #191919;
+    padding: 40px 0  40px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.main_cat h2 strong {
+    color: #fff;
+}
+
+.main_cat h2::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/header_img.png);
+    top: 19px;
+    margin-left: -68px;
+}
+
+.main_cat h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-image: url(http://reanimator48.ru/img/header_img.png);
+    background-position: -50px 0;
+    top: 19px;
+    margin-left: 20px;
+}
+
+.main_cat.s_blac {
+    display: none;
+}
+
+.small_uslugi {
+    color: #fff;
+    font-family: BebasRegular;
+    font-size: 20px;
+    height: 62px;
+    line-height: 62px;
+    padding: 0 20px;
+    position: absolute;
+    right: 192px;
+    top: 98px;
+}
+
+.last .logo_wrap {
+    height: 0;
+    margin-top: -7px;
+    transform: scale(0.6);
+}
+
+.bordered td, 
+.bordered th {
+    background-color: #f4f4f4;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.hov {
+    max-width: 100%;
+    text-align: center;
+}
+
+.hov a{
+    display: block;
+    padding: 25px 0;
+    position: relative;
+    background-color: #fff;
+    height: 70px;
+    color: #6A64BC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: color 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.hov a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #777;
+    height: 4px;
+    width: 0%;
+    right: 0;
+    transition: width 0.35s;
+    animation-timing-function: ease-in-out;
+}
+
+.hov a:hover::after 
+ {
+    color: #1A5455;
+    width: 100%;
+}
