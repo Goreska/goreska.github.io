@@ -1,0 +1,762 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.main
+		&-img
+			position: absolute
+			min-width: 300px
+			transform: translateX(5%)
+			&::before
+				position: absolute
+				content: ''
+				display: block
+				width: 250px
+				height: 250px
+				border: 1px solid #ffffff
+				border-radius: 50%
+				opacity: 0.5
+				left: 50%
+				margin-left: -100px
+				z-index: -1
+	.making
+		&-title
+			position: relative
+			left: -4%
+			background-color: $active-color
+			padding-left: 0px
+			padding-top: 17px
+			padding-bottom: 17px
+			width: 104%
+			margin: auto
+			margin-bottom: 28px
+			h2
+				text-align: center
+				text-transform: uppercase
+		&-item
+			&-small__item
+				margin-rigt: 10px
+				img
+					max-width: 98%
+					min-height: 90px
+
+		&-text
+		font-size: 16px
+		font-weight: 300
+		line-height: 24px
+		text-align: center
+		&-slider
+			max-width: 547px
+			position: relative
+			margin-bottom: 13px
+			&__item
+				width: 547px
+				img
+					margin: 0 auto
+					min-width: 100%
+					height: auto
+		&-slider-small
+			max-width: 92%
+	.next 
+	  position: absolute
+	  right: -30px
+	  height: 93px
+	  top: 0
+	  width: 22px
+	  border: 1px solid #f39003
+	  outline: none
+	  background: url(../img/making/next1.png) center no-repeat
+	  &:hover
+	  	background-color: #f39003 !important
+	  	background: url(../img/making/next.png) center no-repeat
+// ≥992px
++media-breakpoint-down(md)
+	.hidden-mobile
+		display: none
+	.header
+		&-logo
+		&-contacts
+			&__phone
+				&s
+					flex-direction: column
+				margin-right: 20px
+				&:first-child 
+					border: none !important
+					padding-right: 0px
+					margin-right: 0px
+	.main
+		position: relative
+		padding-top: 65px
+		padding-bottom: 75px
+		color: $light
+		background: #373b37 url(../img/main/main-bg.png) center no-repeat
+		background-size: cover
+		z-index: 1
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&-img
+			position: absolute
+			min-width: 250px
+			transform: translateX(-50px)
+			&::before
+				position: absolute
+				content: ''
+				display: block
+				width: 200px
+				height: 200px
+				border: 1px solid #ffffff
+				border-radius: 50%
+				opacity: 0.5
+				left: 50%
+				margin-left: -100px
+				z-index: -1
+		&-text__title
+			font-size: 41px
+			font-weight: 700
+			line-height: 42px
+			text-align: center
+		&-text__subtitle
+			font-size: 28px
+			font-weight: 300
+			text-align: center
+		&-text__form
+			background-color: rgba(#fff, 0.2)
+			border: none
+			padding: 30px 27px
+			padding-right: 0
+			width: 100%
+			margin-top: 18px
+	.products
+		padding-top: 57px
+		padding-bottom: 53px
+		&-block
+			text-align: center
+			margin-bottom: 35px
+			&__img
+				img
+					max-width: 100%
+					display: block
+					height: auto
+			&__description
+				font-weight: 700
+				margin-bottom: 25px
+				font-size: 15px
+			&__buttons
+				button
+					margin-left: 7px
+	.features
+		&-block
+			background-color: $light
+			display: flex
+			align-items: center
+			padding-top: 30px
+			padding-bottom: 30px
+			margin-bottom: 30px
+			padding-left: 13px
+			padding-right: 25px
+	.making
+		padding-top: 87px
+		padding-bottom: 0px
+		&-title
+			position: relative
+			left: 0
+			background-color: $active-color
+			padding-left: 0px
+			padding-top: 17px
+			padding-bottom: 17px
+			width: 146%
+			margin: auto
+			transform: translateX(-16%)
+			margin-bottom: 28px
+			h2
+				text-align: center
+				text-transform: uppercase
+		&-text
+		font-size: 16px
+		font-weight: 300
+		line-height: 24px
+		text-align: center
+		&-slider
+			min-width: 100%
+			position: relative
+			margin-bottom: 13px
+			&__item
+				width: 655px
+				img
+					margin: 0 auto
+					min-width: 100%
+					height: auto
+		&-slider-small
+			max-width: 655px
+			margin-left: 30px
+	.next 
+	  position: absolute
+	  right: -5px
+	  height: 93px
+	  top: 0
+	  width: 22px
+	  border: 1px solid #f39003
+	  outline: none
+	  background: url(../img/making/next1.png) center no-repeat
+	  &:hover
+	  	background-color: #f39003 !important
+	  	background: url(../img/making/next.png) center no-repeat
+// ≥768px--------------------------------------------------------------------------------------------------------------------------------------------
++media-breakpoint-down(sm)
+	.section
+		&-title
+			font-size: 22px
+			&::after
+				display: none
+	.header
+		&-logo
+			background: url(../img/header/header-logo.png) center no-repeat
+			max-width: 191px
+			min-height: 61px
+		&-contacts
+			display: flex
+			justify-content: flex-end
+			&__phone
+				&s
+					flex-direction: column
+					margin-right: -14px
+				font-size: 16px
+				border: none !important
+				&-bold
+					font-weight: 900
+			&__button
+				padding-top: 12px
+				padding-bottom: 12px
+				padding-left: 13px
+				padding-right: 12px
+	.hidden-mobile
+		display: none
+	.mobile-visible
+		display: block
+	.main
+		position: relative
+		padding-top: 65px
+		padding-bottom: 75px
+		color: $light
+		background: #373b37 url(../img/main/main-bg.png) center no-repeat
+		background-size: cover
+		z-index: 1
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&-img
+			position: relative
+			&::before
+				display: none
+		&-text__title
+			font-size: 40px
+			font-weight: 700
+			line-height: 44px
+			text-align: center
+		&-text__subtitle
+			font-size: 28px
+			font-weight: 300
+			text-align: center
+		&-text__form
+			background-color: rgba(#fff, 0.2)
+			border: none
+			padding-top: 30px
+			padding-bottom: 30px
+			width: 100%
+			margin-top: 18px
+			text-align: center
+			padding-left: 0
+	.form-title
+		font-size: 20px
+		line-height: 30px
+		font-weight: 300
+		padding-right: 0
+	.form-subtitle
+		text-transform: uppercase
+		font-weight: 700
+		line-height: 30px
+		margin-top: 3px	
+		margin-bottom: 15px
+	.form-input
+		margin-top: 15px
+		padding: 19px
+		width: 80%
+		margin: auto
+		display: block
+		text-align: center
+		margin-bottom: 15px
+	.form-button
+		padding: 21px
+	.form-small
+		font-size: 14px
+		margin-top: 5px
+		padding-left: 0
+	.features
+		&-block
+			background-color: $light
+			margin: auto
+			margin-bottom: 20px
+			width: 80%
+	.products
+		padding-top: 32px
+		padding-bottom: 14px
+		&-block
+			&__img
+				display: flex
+				justify-content: center
+				margin-bottom: 19px
+				max-width: 100%	
+				height: auto
+	.making
+		padding-top: 30px
+		padding-bottom: 5px
+		&-title
+			position: relative
+			left: 0
+			background-color: $active-color
+			padding-left: 0
+			padding-top: 17px
+			padding-bottom: 17px
+			width: 160%
+			margin-bottom: 28px
+			h2
+				color: $light
+				font-size: 20px
+				font-weight: 700
+				line-height: 22px
+				text-align: center
+				text-transform: uppercase
+		&-text
+			font-size: 16px
+			font-weight: 300
+			line-height: 18px
+			text-align: center
+		&-slider
+			width: 100%
+			height: auto
+			margin-bottom: 0
+			&__item
+				display: block 
+				max-width: 100%	
+				height: auto
+				img
+					width: 100% 
+	.next
+		position: absolute
+		transform: translateY(-50%)
+		top: 50%
+		right: 0
+		height: 93px
+		width: 22px
+		border: 1px solid #f39003
+		background-color: #f39003 !important
+		background: url(../img/making/next.png) center no-repeat
+		outline: none !important
+
+	.prev
+		position: absolute
+		transform: translateY(-50%)
+		top: 50%
+		left: 0px
+		z-index: 1
+		height: 93px
+		width: 22px
+		border: 1px solid #f39003
+		background-color: #f39003 !important
+		background: url(../img/making/back.png) center no-repeat
+		outline: none !important
+	.contacts
+		padding-bottom: 14px
+		&-map
+		&-content
+			padding: 33px 40px 39px 62px
+			position: relative
+			z-index: 0
+			margin-top: 0
+			left: 0
+			background-color: $light
+			line-height: 22px
+			text-align: center
+			&__map-icon
+				&::before
+					display: none
+			&__text-bold
+				font-size: 18px
+				font-weight: 700
+			&__title
+				font-size: 14px
+				font-weight: 300
+				margin-bottom: 8px
+				position: relative
+			&__phone
+				font-size: 14px
+				font-weight: 300
+				line-height: 25px
+				&::before
+					display: none
+			&__btn
+				margin-bottom: 15px
+			&__email
+				line-height: 22px
+				position: relative
+				&::before
+					display: none
+			
+
+// ≥576px -------------------------------------------------------------------------------------------------------------------------------------------
++media-breakpoint-down(xs)
+	.section
+		&-title
+			font-size: 22px
+			&::after
+				display: none
+	.header
+		&-logo
+			background: url(../img/header/header-logo-mobile.png) center no-repeat
+			width: 36px
+			height: 35px
+		&-contacts
+			display: flex
+			justify-content: flex-end
+			&__phone
+				&s
+					flex-direction: column
+					margin-right: -14px
+				font-size: 14px
+				border: none !important
+				&-bold
+					font-weight: 900
+			&__button
+				padding-top: 8px
+				padding-bottom: 8px
+				padding-left: 11px
+				padding-right: 8px
+	.hidden-mobile
+		display: none
+	.mobile-visible
+		display: block
+	.main
+		&-text
+			&__title
+				font-size: 22px
+				font-weight: 700
+				line-height: 24px
+				color: $active-color
+				text-align: center
+			&__subtitle
+				font-size: 18px
+				font-weight: 400
+				text-align: center
+			&__form
+				background-color: transparent
+				border: none
+				padding: 0
+				width: 100%
+				margin-top: 18px
+	
+		&-img
+			&:before
+				display: none
+	.form
+		&-title
+			font-size: 15px
+			font-weight: 300
+			line-height: 18px
+			text-align: center
+			margin: 0 auto
+			padding: 0
+			margin-bottom: 7px
+		&-subtitle
+			font-weight: 700
+			text-transform: uppercase
+			text-align: center
+		&-input
+			width: 100%
+			margin-top: 11px
+			margin-bottom: 13px
+			padding: 17px
+			opacity: 0.7
+			color: #373737
+			font-size: 14px
+			font-weight: 300
+			borden: none
+			border-radius: 3px
+			text-align: center
+		&-button
+			padding-top: 14px
+			padding-bottom: 14px
+			display: block
+			margin: auto
+			margin-bottom: 10px
+			font-size: 15px
+		&-small
+			text-align: center
+			margin-right: 20px
+	.numbers
+		padding-top: 25px
+		&-title
+			font-size: 30px
+		&-text
+			color: $dark
+			font-size: 14px
+			font-weight: 300
+			line-height: 20px
+			margin-bottom: 20px
+	.features
+		&-block
+			display: flex
+			align-items: center
+			padding-top: 23px
+			padding-bottom: 23px
+			padding-left: 13px
+			padding-right: 5px
+			margin-bottom: 10px
+	.products
+		padding-top: 32px
+		padding-bottom: 14px
+		&-block
+			&__img
+				margin-bottom: 19px
+				display: block 
+				max-width: 100%	
+				height: auto
+				img
+					width: 100% 
+			&__buttons
+				display: flex
+				justify-content: center
+	.offer
+		padding-top: 64px
+		padding-bottom: 45px
+		&-title
+			font-size: 20px
+			line-height: 24px
+			font-weight: 900
+			span
+				margin-top: 9px
+				font-size: 16px
+				font-weight: 300
+		&-form
+			&__label
+				font-size: 14px
+				font-weight: 300
+				margin-bottom: 22px
+			&__input
+				font-size: 13px
+				font-weight: 300
+				padding: 17px
+				width: 100%
+				text-align: center
+				margin-bottom: 12px
+			&__button
+				margin-bottom: 14px
+	.making
+		padding-top: 30px
+		padding-bottom: 5px
+		&-title
+			position: relative
+			left: 0
+			background-color: $active-color
+			padding-left: 0
+			padding-top: 17px
+			padding-bottom: 17px
+			width: 111%
+			transform: translateX(-5%)
+			margin-bottom: 28px
+			h2
+				color: $light
+				font-size: 20px
+				font-weight: 700
+				line-height: 22px
+				text-align: center
+				text-transform: uppercase
+		&-text
+			font-size: 14px
+			font-weight: 300
+			line-height: 18px
+			text-align: center
+		&-slider
+			width: 100%
+			height: auto
+			margin-bottom: 0
+			&__item
+				display: block 
+				max-width: 100%	
+				height: auto
+				img
+					width: 100% 
+	.next
+		position: absolute
+		transform: translateY(-50%)
+		top: 50%
+		right: 0
+		height: 93px
+		width: 22px
+		border: 1px solid #f39003
+		background-color: #f39003 !important
+		background: url(../img/making/next.png) center no-repeat
+		outline: none !important
+
+	.prev
+		position: absolute
+		transform: translateY(-50%)
+		top: 50%
+		left: 0px
+		z-index: 1
+		height: 93px
+		width: 22px
+		border: 1px solid #f39003
+		background-color: #f39003 !important
+		background: url(../img/making/back.png) center no-repeat
+		outline: none !important
+
+	.customers
+		padding-top: 57px
+		padding-bottom: 10px
+		&-block
+			margin-bottom: 7px
+			&__img
+				max-width: 100%
+				height: auto
+				cursor: pointer
+				img
+					width: 90%
+				&:hover
+					transform: none
+	.reviews
+		background-color: $bgc-light
+		padding: 40px 0 40px 0
+
+	.reviews-arrow-p
+		position: absolute
+		border: none !important
+		outline: none !important
+		z-index: 1
+		top: 35%
+		left: 15px
+		cursor: pointer
+		width: 22px
+		height: 78px
+		background: url(../img/reviews/r-arrow-prev-w.png) center no-repeat
+		background-color: $active-color !important
+
+	.reviews-arrow-n
+		position: absolute
+		border: none !important
+		outline: none !important
+		cursor: pointer
+		top: 35%
+		right: 15px
+		width: 22px
+		height: 78px
+		background: url(../img/reviews/r-arrow-next-w.png) center no-repeat
+		background-color: $active-color !important
+	.contacts
+		padding-bottom: 14px
+		&-map
+		&-content
+			padding: 33px 40px 39px 62px
+			position: relative
+			z-index: 0
+			margin-top: 0
+			left: 0
+			background-color: $light
+			line-height: 22px
+			text-align: center
+			&__map-icon
+				&::before
+					display: none
+			&__text-bold
+				font-size: 18px
+				font-weight: 700
+			&__title
+				font-size: 14px
+				font-weight: 300
+				margin-bottom: 8px
+				position: relative
+			&__phone
+				font-size: 14px
+				font-weight: 300
+				line-height: 25px
+				&::before
+					display: none
+			&__btn
+				margin-bottom: 15px
+			&__email
+				line-height: 22px
+				position: relative
+				&::before
+					display: none
+	.overlay 
+		.popup
+			left: 50%
+			top: 50px
+			width: 100%
+			/* Выравниваем по середине экрана */
+			&-close
+				right: 0px
+				top: -40px
+			&-title
+				font-size: 18px
+			&-form
+				padding: 37px 0px 49px 0px
+				&__header
+					font-size: 20px
+					font-weight: 400
+					line-height: 22px
+					margin-bottom: 20px
+				&__subtitle
+						font-size: 16px
+						line-height: 24px
+				&__label
+					font-size: 16px
+					font-weight: 300
+					display: block
+					margin-top: 8px
+					margin-bottom: 11px
+				&__input
+					padding-top: 20px
+					padding-bottom: 20px
+					border-radius: 5px
+					margin: auto
+					text-align: center
+					width: 90%
+					display: block
+					margin-bottom: 20px
+				&__button
+					padding: 18px 29px
+					display: block
+					margin: auto
+					margin-bottom: 10px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
