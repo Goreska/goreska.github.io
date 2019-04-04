@@ -1,0 +1,113 @@
+.reviews
+    padding-top: 193px
+    padding-bottom: 35px
+    +md-block()
+        padding-top: 93px
+    +sm-block()
+        padding-top: 50px
+
+.reviews::before
+    position: absolute
+    content: url(../img/All/quotes.png)
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: -135px
+    width: 79px
+    height: 63px
+    +md-block()
+        display: none
+
+.reviews-slider__wrapper
+    position: relative
+
+.review-slider__items
+    position: relative
+    z-index: 1000
+
+.review-slider__icon svg
+    position: absolute
+    display: block
+    left: 50%
+    top: -121px
+    transform: translateX(-50%)
+    
+.review-slider__description
+    position: relative
+    max-width: 70%
+    margin: 0 auto
+    margin-bottom: 44px 
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    text-align: center
+    +sm-block()
+        max-width: 90%
+        font-size: 14px
+        font-weight: 400
+
+.review-slider__name
+    margin: 0
+    text-align: center
+    font-size: 24px
+    font-weight: 700
+    color: $black
+    +sm-block()
+        display: none
+    
+.review-slider__name-sm
+    display: none
+    +sm-block()
+        display: block
+        margin: 0
+        margin-bottom: 12px
+        font-size: 18px
+        font-weight: 700
+        color: $black
+        text-align: center
+
+
+.review-slider__name-description
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: $light-grey
+    +sm-block()
+        display: none
+
+
+.slick-next
+    height: 41px
+    width: 22px
+    right: 50px
+    top: 80px
+
+.slick-prev
+    height: 41px
+    width: 22px
+    left: 50px
+    top: 80px
+    z-index: 1
+
+.slick-prev::before
+    content: url(../img/All/left-arrow.png)
+
+.slick-next::before
+    content: url(../img/All/right-arrow.png)
+
+.slick-dots
+    bottom: -30px
+    +sm-block()
+        bottom: 7px
+
+.slick-dots li button::before
+    margin-top: 24px
+    opacity: 1
+    font-size: 0
+    width: 6px
+    height: 6px
+    background-color: #bec3c7
+    border-radius: 50%
+
+.slick-dots li.slick-active button:before
+    border: 3px solid #283645
+    transform: translateY(-3px)

@@ -1,0 +1,43 @@
+@import smart-grid.sass
+@import var.sass
+@import fonts.sass
+@import blocks/page-header.sass
+@import blocks/proposals.sass
+@import blocks/reviews.sass
+@import blocks/price.sass
+
+.reset
+	+reset()
+
+.wrapper
+	+wrapper()
+
+body
+	font-size: $default-size
+	position: relative
+	min-width: 320px
+	line-height: 1.6
+	font-family: 'Open Sans', sans-serif
+	background-color: $white
+	margin: 0
+	padding: 0
+
+img
+	max-width: 100%
+	height: auto
+
+.debug
+    +debug(rgba(40, 54, 69, 0.3), 1px solid #000)
+
+// .visually-hidden:not(:focus):not(:active)
+// 	position:absolute
+// 	width: 1px
+// 	height: 1px
+// 	margin: -1px
+// 	border: 0
+// 	padding: 0
+// 	white-space: nowrap
+// 	clip-path: inset(100%)
+// 	clip: rect( 0 0 0 0)
+// 	overflow: hidden
+
