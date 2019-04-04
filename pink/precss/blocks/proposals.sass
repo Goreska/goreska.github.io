@@ -1,0 +1,239 @@
+.proposals
+    padding-top: 60px
+    padding-bottom: 67px
+    background-image: url(../img/All/proposals-bg.png)
+    background-position: center top 276px
+    background-repeat: no-repeat
+    background-size: cover
+    +md-block()
+        background-position: center top 317px
+        background-repeat: no-repeat
+        background-size: 100% 520px
+        padding-bottom: 0
+    +sm-block()
+        background-position: center bottom
+        background-repeat: no-repeat
+        background-size: 100% 900px
+        padding-bottom: 0
+
+.proposals__wrapper
+    +wrapper()
+
+.proposals-title
+    font-size: 50px
+    font-weight: 300
+    color: $light-grey
+    margin: 0 auto
+    display: block
+    +md-block()
+        font-size: 40px
+    +sm-block()
+        font-size: 24px
+        font-weight: 300
+        
+
+
+.proposals-title--first
+    text-align: center
+    
+.proposals-title--second
+    width: 640px
+    margin-bottom: 75px
+    font-size: 45px
+    text-align: center
+    box-sizing: border-box
+    line-height: normal
+    +md-block()
+        max-width: 60%
+        margin-bottom: 95px
+    +sm-block()
+        margin-bottom: 65px
+
+
+.proposals-block__wrapper
+    +row-flex()
+    justify-content: space-around
+    margin-bottom: 53px
+    position: relative
+    +md-block()
+        margin-left: 0 auto
+        padding-top: 40px
+        justify-content: flex-end
+        padding-bottom: 25px
+    +sm-block()
+        margin-bottom: 0
+        padding-bottom: 322px
+    +xs-block()
+        padding-bottom: 344px
+    
+.proposals-block__wrapper::before
+    display: none
+    content: ''
+    background-image: url(../img/All/iphone-img3.png)
+    background-repeat: no-repeat
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 200px
+    height: 281px
+    min-height: 320px
+    min-width: 157px
+    +sm-block()
+        display: block
+
+.proposals-block__item
+    +col()
+    +size-md(7)
+    +size-sm(12)
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    +md-block()
+        align-items: flex-start
+        margin-bottom: 8px
+        padding-left: 6%
+    +sm-block()
+        align-items: center
+        padding-left: 0px
+
+
+.proposals-block__img
+    margin-bottom: 30px
+    +md-block()
+        display: none
+
+.proposals-block__item::after
+    position: absolute
+    content: ''
+    top: 264px
+    left: -1px
+    width: 238px
+    height: 4px
+    background-color: rgba(212, 212, 212, 0.2)
+    +md-block()
+        display: none
+
+.mood-block::before
+    display: none
+    position: absolute
+    content: ''
+    height: 500px
+    width: 500px
+    top: -35px
+    left: -280px
+    background-image: url(../img/All/iphone-img3.png)
+    background-repeat: no-repeat
+    background-size: contain
+    +md-block()
+        display: block
+    +sm-block()
+        display: none
+
+
+.mood-block__img
+    width: 164px
+    height: 264px
+
+.changes-block__img
+    width: 164px
+    height: 264px
+
+.friends-block__img
+    width: 164px
+    height: 264px
+        
+
+.proposals-block__title
+    width: 236px
+    box-sizing: border-box
+    text-align: center
+    font-size: 25px
+    font-weight: 700
+    line-height: 30px
+    +md-block()
+        width: 298px
+        margin-bottom: 0
+        font-size: 18px
+        font-weight: 700
+        line-height: 24px
+        text-align: left
+    +sm-block()
+        text-align: center
+        margin-bottom: 10px
+    +xs-block()
+        width: 90%
+        
+
+.proposals-block__subtitle
+    width: 236px
+    min-height: 146px
+    text-align: center
+    font-size: 18px
+    font-weight: 400
+    color: $light-grey
+    +md-block()
+        width: 298px
+        min-height: 0
+        text-align: left
+        font-size: 14px
+        font-weight: 400
+    +sm-block()
+        text-align: center
+    +xs-block()
+        width: 90%
+
+.effect-block__wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    +sm-block()
+        display: none
+
+.effect-block__img-wrap
+    margin-left: 70px
+    +md-block()
+        margin-left: 30px
+
+.effect-block__text-wrap
+    width: 525px
+    margin-left: 71px
+    +md-block()
+        padding-top: 84px
+
+.effect-block__title
+    margin: 0
+    font-size: 30px
+    font-weight: 700
+    line-height: 30px
+    margin-bottom: 25px
+    +md-block()
+        width: 185px
+        font-size: 30px
+        font-weight: 700
+        line-height: 36px
+
+.effect-block__description
+    margin: 0
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: $light-grey
+
+.effect-block__description--first
+    margin-bottom: 45px
+    +md-block()
+        font-size: 14px
+        font-weight: 400
+        margin-bottom: 15px
+
+.effect-block__description-link
+    color: $light-grey
+    +md-block()
+        font-size: 14px
+        font-weight: 400
+
+
+
+

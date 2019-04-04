@@ -1,1 +1,0 @@
-# goreska.github.io
