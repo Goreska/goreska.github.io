@@ -52,7 +52,7 @@ $(document).ready(function () {
             }
        ]
     });
-    // $('.price-table').slick('slickRemove', 0);          //  Убирает лишний слайдер
+        // $('.price-table').slick('slickRemove', 0);
 });
 
 
