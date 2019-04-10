@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet"> 
     <title>Pink Teamplate</title>
 </head>
-<body class="page--photo">
+<body class="page--form">
     <div class="debu">
         <div>
             <div>
@@ -170,175 +170,130 @@
                </div>
             </div>
         </div>
-        <h1 class="photo-header__title">
-            Фотографии <br>
-            пользователей
+        <h1 class="form-header__title">
+            Конкурс на самое безбашенное <br> путешествие с Пинк
         </h1>
     </header>
-    
-    <main class="photo-main">
-        <section class="gallery">
-            <h2 class="section-title">
-                Взгляните на фотографии, которые выкладывают пользователи! <br>
-                Видите, как не хватает ваших?
+
+    <main class="form-main-page">
+        <div class="page__title--wrapper">
+            <h2 class="form-main-page__title">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на <br>
+                вашу бонусную карту! Пожалуйста, заполните форму ниже:
             </h2>
-            <div class="user-photo user-photo__day-photo">
-                <div class="user-photo__panorama-of-day-title">
-                    Панорама дня
+        </div>
+        <section class="profile">
+            <div class="profile__wrapper">
+                <div class="user-data__form-wrapper">
+                    <form action="" class="user-data__form">
+                        <label for="user-data__surname" class="user-data__surname">
+                            <span class="user-data__text">Фамилия:</span>
+                            <input type="text" class="user-data__surname-input" placeholder="Укажите вашу фамилию *">
+                        </label>
+                        <label for="user-data__name" class="user-data__name">
+                            <span class="user-data__text">Имя:</span>
+                            <input type="text" class="user-data__name-input" placeholder="Введите ваше имя *">
+                        </label>
+                        <label for="user-data__patronymic" class="user-data__patronymic">
+                            <span class="user-data__text">Отчество:</span>
+                            <input type="text" class="user-data__patronymic-input" placeholder="Ну и отчество тоже">
+                        </label>
+                    </form>
                 </div>
-                <picture class="user-photo__image">
-                    <img src="./img/All/panorama-desktop.jpg" alt="Панорада дня пинк" class="user-photo__img-panorama">
-                </picture>
-                <div class="user-photo__caption__wrapper">
-                    <article class="user-photo__caption">
-                        <h4 class="user-photo__caption-name">Анна <span class="user-photo__caption-time">(5 минут назад)</span>
-                        </h4>
-                        <p class="user-photo__caption-comments">
-                            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
-                            задавайте свои вопросы!
-                        </p>
-                        <footer class="user-photo__caption-likes">
-                            Нравится: 215
-                        </footer>
-                    </article>
-                </div>
-            </div>
-            <div class="user-photo__container">
-                <div class="user-photo__gallery-wrapper">
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-1-desktop.jpg" width="300" height="400" alt="Фото пользователей Pink">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Левон<span class="user-photo__caption-time">(5 часов
-                                    назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Вчера он на луну летал, сегодня в руки к нам попал.
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 356
-                            </footer>
-                        </article>
-                    </div>
-        
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-2-desktop.jpg" alt="">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Антон <span class="user-photo__caption-time">(12 часов
-                                    назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Соседи будут рады!
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 666
-                            </footer>
-                        </article>
-                    </div>
-        
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-3-desktop.jpg" alt="">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Борис
-                                <span class="user-photo__caption-time">(20 часов назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Здесь могла быть ваша цитата о высоком и вечном.
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 215
-                            </footer>
-                        </article>
-                    </div>
-        
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-4-desktop.jpg" alt="">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Сергей
-                                <span class="user-photo__caption-time">(25 часов назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Самая кубанская в мире!
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 4
-                            </footer>
-                        </article>
-                    </div>
-        
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-5-desktop.jpg" alt="">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Максим
-                                <span class="user-photo__caption-time">(40 часов назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Где снег-то?
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 150
-                            </footer>
-                        </article>
-                    </div>
-        
-                    <div class="user-photo__gallery-user-image-block">
-                        <picture class="gallery-user__image">
-                            <img src="./img/All/photo-6-desktop.jpg" alt="">
-                        </picture>
-                        <article class="user-photo__caption">
-                            <h4 class="user-photo__caption-name">Надежда
-                                <span class="user-photo__caption-time">(45 часов назад)</span></h4>
-                            <p class="user-photo__caption-comments">
-                                Всем GM и взаимные лайки!
-                            </p>
-                            <footer class="user-photo__caption-likes">
-                                Нравится: 2560
-                            </footer>
-                        </article>
-                    </div>
+                <div class="application-data__form-wrapper">
+                    <h3 class="application-form__title form-page__section-title">
+                        С каким приложением путешествовали?
+                    </h3>
+                    <form action="" class="application-data__form">
+                        <label for="application-ios" class="application-ios">
+                            <input id="application-ios" type="radio" name="IOS" value="IOS">
+                            <span class="application__checkmark"></span>
+                            <span class="aplication-data__description">Pink для IOS</span>
+                        </label>
+                        <label for="application-android" class="application-android">
+                            <input id="application-android" type="radio" name="Android" value="Android">
+                            <span class="application__checkmark"></span>
+                            <span class="aplication-data__description">Pink для Android</span>
+                        </label>
+                        <label for="application-windows" class="application-windows">
+                            <input id="application-windows" type="radio" name="WP" value="WP">
+                            <span class="application__checkmark"></span>
+                            <span class="aplication-data__description">Pink для Android</span>
+                        </label>
+                    </form>
                 </div>
             </div>
         </section>
-
-        <section class="image-editor">
-            <h2 class="section-title">
-                Затмите их всех! <br>
-                Выкладывайте все, что накопилось в телефоне!
-            </h2>
-            <div class="image-editor__container">
-                <div class="image-editor__wrapper">
-                    <div class="image-editor__picture">
-                        <picture>
-                            <img class="image-editor__download-image" src="./img/All/editor-image.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="image-editor__block-tools">
-                        <div class="image-editor__tools">
-                            <div class="image-editor__crop">
-                                <img class="image-editor__crop-image" src="./img/All/crop.png" alt="">
-                                <input id="range-crop" class="range range-crop" type="range" min="0" max="100" value="50">
-                            </div>
-                            <div class="image-editor__fill">
-                                <img class="image-editor__fill-image" src="./img/All/fill.png" alt="">
-                                <input class="range range-fill" type="range" min="0" max="100" value="50" >
-                            </div>
-                            <div class="image-editor__contrast">
-                                <img class="image-editor__contrast-image" src="./img/All/contrast.png" alt="">
-                                <input class="range range-contrast" type="range" min="0" max="100" value="50">
-                            </div>
-                        </div>
-                        <button class="image-editor__button image-editor__button--post">
-                            Запостить
-                        </button>
-                        <button class="image-editor__button image-editor__button--cancel">
-                            Отмена
-                        </button>
-                    </div>
-                </div>
+        <section class="user-contacts">
+            <div class="user-contacts__form-wrapper">
+                <h3 class="user-contacts__title form-page__section-title">
+                        Контактная информация
+                </h3>
+                <form action="" class="user-contacts__form">
+                    <label for="user-contacts__label" class="user-contacts__label user-contacts__label--phone">
+                        <input id="user-contacts__phone" type="text" class="user-contacts__input user-contacts__input--phone" placeholder="Номер, пожалуйста">
+                        <span class="user-contacts__text--phone">Номер телефона</span>
+                    </label>
+                    <label for="user-contacts__label" class="user-contacts__label user-contacts__label--email">
+                        <input id="user-contacts__email" type="text" class="user-contacts__input" placeholder="Введите почту *">
+                        <span class="user-contacts__text--email">Адрес почты</span>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section class="user-achivments">
+            <div class="user-achivments__form-wrapper">
+                <h3 class="user-achivments__title form-page__section-title">
+                    Ваши безбашенные достижения в путешествии
+                </h3>
+                <form action="" class="user-achivments__form">
+                    <label for="user-achivments__selfi" class="user-achivments__block user-achivments__block--selfi">
+                        <input id="user-achivments__selfi" type="checkbox" class="user-achivments__selfi-input" checked>
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Сделал селфи с акулой</span>
+                    </label>
+                    <label for="user-achivments__chuck" class="user-achivments__block user-achivments__block--chuck">
+                        <input id="user-achivments__chuck" type="checkbox" class="user-achivments__chuck-input">
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Видел Чака Норриса</span>
+                    </label>
+                    <label for="user-achivments__tower" class="user-achivments__block user-achivments__block--tower">
+                        <input id="user-achivments__tower" type="checkbox" class="user-achivments__tower-input" checked>
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Удержал башню</span>
+                    </label>
+                    <label for="user-achivments__beach" class="user-achivments__block user-achivments__block--beach">
+                        <input id="user-achivments__beach" type="checkbox" class="user-achivments__beach-input" checked>
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Обгорел на пляже</span>
+                    </label>
+                    <label for="user-achivments__souvenir" class="user-achivments__block user-achivments__block--souvenir">
+                        <input id="user-achivments__souvenir" type="checkbox" class="user-achivments__souvenir-input">
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Накупил сувениров</span>
+                    </label>
+                    <label for="user-achivments__hotel" class="user-achivments__block user-achivments__block--hotel">
+                        <input id="user-achivments__hotel" type="checkbox" class="user-achivments__souvenhotel">
+                        <span class="user-achivments__checkmark"></span>
+                        <span class="user-achivments__text">Разгромил отель</span>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section class="user-emotions">
+            <div class="user-emotions__form-wrapper">
+                    <h3 class="user-emotions__title form-page__section-title">
+                            Опишите свои эмоции
+                        </h3>
+                <form action="" class="user-emotions__form">
+                    <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" class="user-emotions__description" name="user-emotions__description" id="user-emotion__description" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </section>
+        <section class="form-post__block">
+            <div class="form-post__wrapper">
+                <button class="form-post__button">Отправить форму</button>
+                <p class="form-post__description">* — обязательные для заполнения поля</p>
             </div>
         </section>
     </main>

@@ -1,0 +1,71 @@
+.contacts
+    padding-top: 75px
+    &__title
+        margin: 0
+        margin-bottom: 33px
+        text-align: center
+        font-size: 50px
+        font-weight: 300
+        color: $light-grey
+        +md-block()
+            font-size: 40px
+            font-weight: 300
+            margin-bottom: 30px
+        +sm-block()
+            font-size: 30px
+    
+.contacts-block__wrapper
+    +row-flex()
+    justify-content: space-around
+    +sm-block()
+        justify-content: center
+
+.contacts-block__wrapper .contacts-block:nth-child(1)
+    +md-block()
+        order: -1
+
+.contacts-block__wrapper .contacts-block:nth-child(3)
+    +md-block()
+        order: -1
+
+.contacts-block
+    +col()
+    text-align: center
+    &__title
+        font-size: 18px
+        font-weight: 700
+        color: $light-grey
+    &__description
+        position: relative
+        cursor: pointer
+        font-size: 24px
+        font-weight: 300
+        color: #d22856
+        &::after
+            display: block
+            position: absolute
+            content: ''
+            width: 0
+            height: 2px
+            background-color: #45525e
+            transition: width 0.3s ease-out
+            +md-block()
+                display: none
+        &:hover::after
+            width: 100%
+        &:focus::after
+            width: 100%
+
+    &__map-wrapper
+        position: relative
+        min-width: 100%
+        min-height: 574px
+        background-image: url(../img/All/map.png)
+        background-position: center center
+        background-repeat: no-repeat
+        +md-block()
+            min-height: 377px
+    &__map
+        width: 100%
+        height: auto
+    

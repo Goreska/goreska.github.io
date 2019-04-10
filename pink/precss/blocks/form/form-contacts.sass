@@ -1,0 +1,131 @@
+.user-contacts
+    margin-bottom: 69px
+
+.user-contacts__form-wrapper
+    +wrapper()
+    position: relative
+
+.user-contacts__form
+    border: 2px solid #e5e5e5
+    display: flex
+    align-items: center
+    justify-content: space-around
+    min-height: 162px
+    +md-block()
+        min-width: 100%
+        padding-top: 47px
+        padding-bottom: 68px
+        width: 100%
+        flex-direction: column
+    +sm-block()
+        border: none
+        padding-top: 0
+
+
+.user-contacts__title
+    position: absolute
+    min-width: 260px
+    text-align: center
+    margin: 0
+    top: -16px
+    left: 50%
+    transform: translateX(-50%)
+    display: block
+    background-color: $white
+    +sm-block()
+        display: none
+
+.user-contacts__label
+    position: relative
+    +sm-block()
+        min-width: 100%
+        max-width: 100% 
+    +xs-block()
+        min-width: 100%
+        max-width: 100%  
+
+.user-contacts__input
+    position: relative
+    min-height: 63px
+    min-width: 371px
+    box-sizing: border-box
+    padding-left: 20px
+    border: 2px solid #e5e5e5
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: $light-grey
+    +md-block()
+        min-width: 570px
+    +sm-block()
+        min-width: 100%
+    +xs-block()
+        min-width: 100%
+    
+.user-contacts__input:hover
+    border: 2px solid #283645
+
+.user-contacts__input:active, .user-contacts__input:focus
+    border: 2px solid #d22856
+    
+.user-contacts__input--phone
+    +md-block()
+        margin-bottom: 73px
+
+.user-contacts__label::after
+    position: absolute
+    content: ''
+    top: 2px
+    right: 2px
+    width: 60px
+    height: 59px
+    background-color: #e5e5e5
+    +xs-block()
+        display: none
+
+.user-contacts__label--phone::before
+    position: absolute
+    z-index: 5
+    content: url(../img/All/contacts-phone.png)
+    width: 20px
+    height: 19px
+    top: 19px
+    right: 20px
+    +xs-block()
+        display: none
+
+.user-contacts__label--email::before
+    position: absolute
+    z-index: 5
+    content: url(../img/All/contacts-email.png)
+    width: 18px
+    height: 13px
+    top: 18px
+    right: 22px
+    +xs-block()
+        display: none
+
+
+
+.user-contacts__text--phone
+    position: absolute
+    left: 21px
+    bottom: -37px
+    +md-block()
+        bottom: 33px
+    +sm-block()
+        top: -37px
+
+.user-contacts__text--email
+    position: absolute
+    left: 26px
+    bottom: -39px
+    +sm-block()
+        top: -37px
+
+.user-contacts__text--phone, .user-contacts__text--email
+    font-size: 14px
+    font-weight: 400
+    line-height: 30px
+    text-transform: uppercase
+    color: #d22856

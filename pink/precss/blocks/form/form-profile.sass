@@ -1,0 +1,173 @@
+.form-main-page
+    padding-top: 90px
+    
+.form-main-page__title
+    margin: 0
+    margin-bottom: 77px
+    text-align: center
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: $light-grey
+    +sm-block()
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+
+.page__title--wrapper
+    +wrapper()
+
+.profile
+    +wrapper
+
+.form-page__section-title
+    font-size: 14px
+    font-weight: 400
+    line-height: 30px
+    text-transform: uppercase
+    color: #d22856
+
+.profile__wrapper
+    +row-flex()
+    margin-bottom: 69px
+    +sm-block()
+        margin-bottom: 25px
+
+
+.user-data__form-wrapper, .application-data__form-wrapper
+    +col()
+    +size(6)
+    +size-md(12)
+
+.user-data__form-wrapper
+    +md-block()
+        margin-bottom: 68px
+    
+.application-data__form-wrapper
+    +sm-block()
+        display: none
+
+.user-data__form label
+    display: block
+    margin-bottom: 57px
+    font-size: 14px
+    font-weight: 400
+    line-height: 30px
+    text-transform: uppercase
+    color: #d22856
+    +sm-block()
+        margin-bottom: 20px
+
+.user-data__form .user-data__patronymic
+    margin-bottom: 0
+
+.user-data__form input
+    margin-left: 22px
+    padding-left: 22px
+    width: 340px
+    min-height: 63px
+    box-sizing: border-box
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    border: 2px solid #e5e5e5
+    +md-block()
+        width: 80%
+    +sm-block()
+        margin-left: 0
+        width: 100%
+        margin-top: 10px
+    
+.user-data__form input:hover, .user-data__form input:active, .user-data__form input:focus
+    border: 2px solid #283645
+    
+.user-data__text
+    +sm-block()
+        margin-left: 25px
+
+
+.user-data__form .user-data__name-input
+    width: 381px
+    +md-block()
+        width: 86%
+    +sm-block()
+        width: 100%
+        margin-top: 10px
+
+.application-data__form-wrapper
+    position: relative
+    padding-top: 54px
+    padding-left: 76px
+    border: 2px solid #e5e5e5
+
+
+.application-form__title
+    min-width: 368px
+    margin: 0
+    position: absolute
+    top: -18px
+    left: 50%
+    transform: translateX(-50%)
+    background-color: #fff
+    text-align: center
+
+.application-data__form label
+    display: block
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: #283645
+
+.application-data__form label
+    position: relative
+    cursor: pointer
+    user-select: none
+    margin-bottom: 38px
+
+.application-data__form input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    width: 0
+    height: 0
+
+.aplication-data__description
+    margin-left: 60px
+
+.application__checkmark
+    position: absolute
+    top: 0
+    left: 0
+    width: 35px
+    height: 35px
+    background-color: $white
+    border: 2px solid #e5e5e5
+    border-radius: 50%
+
+.application__checkmark:hover
+    border: 2px solid #283645
+
+.application-data__form:hover input ~ .application__checkmark
+    background-color: $white
+
+.application-data__form input:checked ~ .application__checkmark
+    background-color: $white
+    border: 2px solid #283645
+
+.application__checkmark::after 
+    content: ""
+    position: absolute
+    display: none
+
+.application-data__form input:checked ~ .application__checkmark::after 
+    display: block
+
+.application-data__form .application__checkmark::after 
+    top: 10px
+    left: 10px
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background: #d22856
+
+

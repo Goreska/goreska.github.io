@@ -1,0 +1,145 @@
+.image-editor__container
+    +wrapper()
+
+.image-editor__wrapper
+    background-color: #f2f2f2
+    +row-flex()
+    padding-top: 55px
+    padding-bottom: 57px
+    justify-content: space-around
+    +sm-block()
+        justify-content: center
+
+.image-editor__picture, .image-editor__block-tools
+    +col()
+    +size-md(6)
+    +size-sm(12)
+
+.image-editor__picture
+    margin-right: 75px
+    +md-block()
+        margin-right: 15
+    +sm-block()
+        margin-bottom: 42px
+    +xs-block()
+    margin-right: 15px
+    
+    
+.image-editor__download-image
+    +sm-block()
+        display: block
+        margin: 0 auto
+    
+.image-editor__tools
+    +xs-block()
+        display: flex
+        position: relative
+        justify-content: space-around
+        margin-bottom: 38px
+        padding-bottom: 75px
+        border-bottom: 2px solid #dedfe1
+
+.image-editor__crop, .image-editor__fill, .image-editor__contrast
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 15px
+    padding-bottom: 13px
+    border-bottom: 1px solid #dedfe1
+    +md-block()
+        margin-bottom: 27px
+        padding-bottom: 24px
+    +xs-block()
+        border-bottom: none
+        margin-bottom: 0
+
+.image-editor__crop-image
+    +md-block()
+        width: 22px
+        height: 22px
+    +sm-block()
+        width: 44px
+        height: 44px
+    
+.image-editor__fill-image
+    +md-block()
+        width: 24px
+        height: 22px
+    +sm-block()
+        width: 48px
+        height: 43px
+        opacity: 0.2
+    
+.image-editor__contrast-image
+    +md-block()
+        width: 16px
+        height: 16px
+    +sm-block()
+        width: 32px
+        height: 32px
+        opacity: 0.2
+
+.image-editor__contrast
+    margin-bottom: 163px
+    +md-block()
+        margin-bottom: 79px
+    +xs-block()
+        margin-bottom: 0
+
+.image-editor__crop img, .image-editor__fill img, .image-editor__contrast img
+    margin-right: 48px
+    +xs-block()
+        margin-right: 0
+
+.range
+    width: 288px
+    height: 2px
+    appearance: none
+    background-color: #283645
+    +xs-block()
+        width: 85%
+
+input[type=range]::-moz-range-thumb
+    appearance: none 
+    width: 14px
+    height: 14px
+    background-color: #f2f2f2
+    border: 2px solid #d22856
+    border-radius: 50%
+
+.range-crop
+    +xs-block()
+        position: absolute
+        bottom: 25%
+        left: 50%
+        transform: translateX(-50%)
+
+.range-fill, .range-contrast
+    +xs-block()
+        display: none
+
+.image-editor__button
+    width: 183px
+    box-sizing: border-box
+    border: 3px solid #d22856
+    border-radius: 20px
+    padding: 15px 0
+    font-size: 18px
+    font-weight: 700
+    line-height: 18px
+    color: #d22856
+    +md-block()
+        display: block
+        margin: 0 auto
+        width: 85%
+        border-radius: 29px
+
+.image-editor__button--post
+    margin-right: 40px
+    +md-block()
+        margin-bottom: 24px
+    
+.image-editor__button--cancel
+    opacity: 0.2
+
+

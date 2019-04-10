@@ -1,0 +1,106 @@
+.user-achivments
+    margin-bottom: 69px
+    +sm-block()
+        background-color: #f2f2f2
+
+.user-achivments__form-wrapper
+    +wrapper()
+    position: relative
+
+.user-achivments__title
+    position: absolute
+    top: -16px
+    left: 50%
+    margin: 0
+    padding: 0 32px
+    transform: translateX(-50%)
+    background-color: $white
+    min-width: 437px
+    text-align: center
+    +sm-block()
+        top: 30px
+        min-width: 220px
+        max-width: 220px
+        text-align: center
+        background-color: transparent
+    
+.user-achivments .user-achivments__title
+    line-height: 20px
+
+.user-achivments__form
+    +row-flex()
+    justify-content: center
+    padding-top: 55px
+    padding-bottom: 55px
+    border: 2px solid #e5e5e5
+    +sm-block()
+        border: none
+        padding-top: 115px
+        padding-bottom: 33px
+
+.user-achivments__block
+    +col()
+    +size(4)
+    +size-sm(12)
+    flex-basis: 290px
+    position: relative
+    cursor: pointer
+    user-select: none
+    margin-bottom: 30px
+    +sm-block()
+        flex-basis: 100%
+
+
+.user-achivments__block input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    width: 0
+    height: 0
+
+.user-achivments__checkmark 
+    position: absolute
+    top: 0
+    left: 30px
+    width: 39px
+    height: 39px
+    border: 2px solid #e5e5e5
+    background-color: $white
+    +xs-block()
+        left: 10px
+    
+.user-achivments__checkmark:hover
+    border: 2px solid #283645
+
+.user-achivments__checkmark::after
+    content: ""
+    position: absolute
+    display: none
+
+.user-achivments__block input:checked ~ .user-achivments__checkmark
+    border: 2px solid #283645
+
+.user-achivments__block input:checked ~ .user-achivments__checkmark::after
+    display: block
+
+.user-achivments__block .user-achivments__checkmark::after
+    left: 9px
+    top: 6px
+    content: url(../img/All/tick.png)
+    width: 22px
+    height: 16px
+
+.user-achivments__text
+    display: block
+    width: 200px
+    margin-left: auto
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    color: #283645
+    +sm-block()
+        margin-left: 100px
+    +xs-block()
+        margin-left: 70px
+
+
