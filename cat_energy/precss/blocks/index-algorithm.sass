@@ -1,0 +1,113 @@
+.algorithm
+    padding-top: 70px
+    
+.algorithm__wrapper
+    max-width: 1300px
+    width: 100%
+    margin: 0 auto
+    padding-left: 40px
+    padding-right: 40px
+
+.algorithm__title
+    margin-bottom: 63px
+
+.algorithm__items
+    display: grid
+    grid-template-rows: minmax(229px, auto)
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 80px
+
+.algorithm__item
+    background-repeat: no-repeat
+    background-position: center right
+
+.algorithm__item--organic
+    background-image: url(../img/1.png)
+    background-position: center right 45px
+
+.algorithm__item--water
+    background-image: url(../img/2.png)
+
+.algorithm__item--food
+    background-image: url(../img/3.png)
+
+.algorithm__item--time
+    background-image: url(../img/4.png)
+    
+.algorithm__image
+    position: relative
+    display: block
+    width: 80px
+    height: 80px
+    margin-bottom: 37px
+    background-color: #68b738
+    background-repeat: no-repeat
+    background-position: center center
+
+.algorithm__image--organic
+    background-image: url(../img/advantage-1.png)
+
+.algorithm__image--water
+    background-image: url(../img/advantage-2.png)
+
+.algorithm__image--food
+    background-image: url(../img/advantage-3.png)
+
+.algorithm__image--time
+    background-image: url(../img/advantage-4.png)
+
+.algorithm__description
+    color: #444444
+    font-family: "Arial MT"
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+
+@media screen and (max-width: 1299.98px)
+    .algorithm
+        padding-top: 43px
+        padding-bottom: 57px
+        display: grid
+    
+    .algorithm__wrapper
+        padding-left: 30px
+        padding-right: 30px
+    
+    .algorithm__items
+        justify-content: center
+        grid-template-rows: minmax(229px, auto) minmax(229px, auto)
+        grid-template-columns: 250px 250px
+        grid-gap: 89px 183px
+    
+@media screen and (max-width: 767.98px)
+    .algorithm
+        padding-top: 23px
+        padding-bottom: 57px
+        display: grid
+    
+    .algorithm__wrapper
+        padding-left: 20px
+        padding-right: 20px
+
+    .algorithm__title
+        margin-bottom: 35px
+        font-size: 36px
+        line-height: 60px
+    
+    .algorithm__items
+        grid-template-rows: minmax(60px, auto) minmax(60px, auto) minmax(60px, auto) minmax(60px, auto)
+        grid-template-columns: 1fr
+        grid-gap: 20px
+    
+    .algorithm__item
+        background-image: none
+        display: grid
+        grid-gap: 20px
+        align-items: center
+        grid-template-columns: 60px 1fr
+    
+    .algorithm__image
+        width: 60px
+        height: 60px
+        margin-bottom: 0px
+

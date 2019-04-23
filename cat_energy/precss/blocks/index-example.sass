@@ -1,0 +1,300 @@
+.example
+    padding-top: 90px
+
+.example-title__wrapper
+    max-width: 1300px
+    width: 100%
+    margin: 0 auto
+    padding-left: 40px
+    padding-right: 40px
+
+.example__inner
+    background-color: #eaeaea
+
+.example__wrapper
+    max-width: 1300px
+    width: 100%
+    margin: 0 auto
+    padding-left: 40px
+    padding-right: 40px
+
+.example__title
+    margin-bottom: 75px
+
+.example-calculation
+    display: grid
+    grid-template-rows: 462px
+    grid-template-columns: 1fr 1fr
+
+.example-calculation__left-block
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "ect ect ." "ecdw ecdw ." "eccw eccw ."
+
+.example-calculation__title
+    grid-area: ect
+    padding-top: 70px
+    font-family: "Arial MT"
+    font-size: 18px
+    line-height: 24px
+
+.example-calculation__data-wrapper
+    padding-top: 48px
+    grid-area: ecdw
+    display: grid
+    grid-gap: 42px
+    grid-template-columns: 162px 162px
+
+.example-calculation__data
+    position: relative
+    max-height: 72px
+    border: 1px solid #cdcdcd
+    font-size: 30px
+    font-weight: 400
+    line-height: 65px
+    text-transform: uppercase
+    text-align: center
+
+.example-calculation__data span
+    position: absolute
+    bottom: -7px
+    left: 50%
+    transform: translateX(-50%)
+    width: 135px
+    font-family: "Arial MT"
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    background-color: #eaeaea
+
+.example-calculation__cost-wrapper
+    grid-area: eccw
+    display: grid
+    grid-template-columns: minmax(179px, auto) 1fr
+    grid-gap: 60px
+    padding-top: 42px
+    .example-calculation__cost-title, .example-calculation__cost
+        font-size: 20px
+        line-height: 20px
+        text-transform: uppercase
+
+.example-calculation__right-block
+    display: grid
+    grid-template-rows: 1fr 1fr
+
+.example-cat__image-wrapper
+    position: relative
+    display: grid
+
+.exmaple-cat__image
+    position: absolute
+    top: -171px
+    left: -28px
+
+.example-cat__range--wrapper
+    position: relative
+    padding-top: 145px
+    padding-left: 40px
+
+.example-cat__range
+    margin-top: 40px
+    display: block
+    margin: 0 auto
+    background-color: #dcdcdc
+    height: 6px
+    appearance: none
+    width: 428px
+    border-radius: 3px
+
+.example-cat__range--before, .example-cat__range--after
+    display: block
+    position: absolute
+    width: 50px
+    font-size: 20px
+    line-height: 20px
+    text-transform: uppercase
+
+.example-cat__range--before
+    top: 139px
+
+.example-cat__range--after
+    top: 139px
+    right: 0
+
+.example-cat__range:focus
+    outline: none
+
+input[type=range]::-moz-range-track
+    cursor: pointer
+    background-color: #dcdcdc
+    animate: 0.2s
+
+input[type=range]::-moz-range-thumb
+    position: relative
+    height: 30px
+    width: 30px
+    cursor: pointer
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15)
+    border-radius: 50%
+    border: 1px solid #cdcdcd
+    background-image: url(../img/slider_control.png)
+    background-repeat: no-repeat
+    background-position: center center
+
+
+@media screen and (max-width: 1299.98px)
+    .example
+        padding-top: 54px
+        display: grid
+        .example-title__wrapper
+            padding-left: 30px
+            padding-right: 30px
+        .example__title
+            margin-bottom: 66px
+
+        
+    .example__inner
+        position: relative
+        background-color: transparent
+        .example__substrate
+            position: absolute
+            width: 100%
+            background-color: #eaeaea
+            min-height: 462px
+            bottom: 0
+        .example__wrapper
+            padding-left: 30px
+            padding-right: 30px
+
+    .example-calculation
+        grid-template-rows: 462px 462px
+        grid-template-columns: 1fr
+        .example-calculation__left-block
+            grid-template-rows: auto 1fr
+            grid-template-columns: 1fr 1fr
+            grid-template-areas: "ect ect" "ecdw eccw"
+            .example-calculation__title
+                padding-top: 0
+            .example-calculation__data-wrapper
+                padding-top: 55px
+                .example-calculation__data span
+                    background-color: $white
+            .example-calculation__cost-wrapper
+                grid-area: eccw
+                display: grid
+                grid-template-rows: 20px 20px
+                grid-template-columns: 1fr
+                grid-gap: 11px
+                padding-top: 63px
+                text-align: end
+        .example-calculation__right-block
+            .example-cat__image-wrapper
+                .exmaple-cat__image
+                    position: absolute
+                    top: -184px
+                    left: 50%
+                    transform: translateX(-50%)
+            .example-cat__range--wrapper
+                padding-left: 0
+                .example-cat__range
+                    margin-left: auto
+                    margin-right: auto
+                .example-cat__range--before, .example-cat__range--after
+                    display: block
+                    position: absolute
+                    width: 50px
+                    font-size: 20px
+                    line-height: 20px
+                    text-transform: uppercase
+                .example-cat__range--before
+                    position: absolute
+                    top: 138px
+                    left: 11%
+                .example-cat__range--after
+                    top: 138px
+                    right: 11%
+
+@media screen and (max-width: 767.98px)
+    .example
+        background-color: #f2f2f2
+        padding-top: 33px
+        .example-title__wrapper
+            padding-left: 20px
+            padding-right: 20px
+            .example__title
+                font-size: 36px
+                line-height: 60px
+                margin-bottom: 33px
+        .example__wrapper
+            padding-left: 20px
+            padding-right: 20px
+
+    .example__substrate
+            display: none
+
+    .example-calculation
+        grid-template-rows: 280px 335px
+        grid-template-columns: 1fr
+
+        .example-calculation__left-block
+            grid-template-rows: 1fr 1fr 1fr
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-areas: "ect ect ect" "ecdw ecdw ecdw" "eccw eccw eccw"
+            .example-calculation__title
+                font-size: 14px
+                font-weight: 400
+                line-height: 18px
+            .example-calculation__data-wrapper
+                padding-top: 20px
+                grid-gap: 32px
+                grid-template-columns: 124px 124px
+                justify-content: space-around
+                .example-calculation__data
+                    font-size: 24px
+                    line-height: 58px
+                    text-transform: uppercase
+                .example-calculation__data span
+                    top: 59px
+                    font-size: 12px
+                    width: 70px
+                    font-weight: 400
+                    line-height: 12px
+                    background-color: #f2f2f2
+                    text-transform: none
+            .example-calculation__cost-wrapper
+                grid-template-columns: 125px 64px
+                grid-gap: 2px
+                padding-top: 35px
+                justify-content: center
+                .example-calculation__cost-title, .example-calculation__cost
+                    font-size: 14px
+                    line-height: 20px
+                    text-transform: uppercase
+                    text-align: center
+
+        .example-calculation__right-block
+            grid-template-rows: 232px auto
+            .example-cat__image-wrapper
+                background-image: url(../img/before-mobile.png)
+                background-repeat: no-repeat
+                background-position: center center
+                .exmaple-cat__image
+                    display: none
+
+            .example-cat__range--wrapper
+                padding-top: 0px
+                display: flex
+                align-items: center
+                justify-content: space-around
+                .example-cat__range
+                    width: 40%
+                    margin-left: 0px
+                    margin-right: 0px
+
+                .example-cat__range--before, .example-cat__range--after
+                    display: block
+                    position: static
+                
+                .example-cat__range--before
+                    order: -1
