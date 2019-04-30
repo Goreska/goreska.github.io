@@ -1,2 +1,0 @@
-# irkoman.github.io
-Portfolio
