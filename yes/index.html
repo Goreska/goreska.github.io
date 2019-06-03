@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Английский язык с YES</title>
+    <title>Start Grid</title>
 </head>
 
 <body class="index-page">
@@ -18,7 +18,7 @@
                <img class="header__logo" src="./img/logo.png" alt="Логотип компании Yes">
                 <p class="header__adress">г. Москва ул. Северная, 35</p>
                 <p class="header__mobile-phone">+7 (945) 46-54-67</p>
-                <a href="#" class="header__link">Заказать звонок</a>
+                <a id="open-modal" class="header__link">Заказать звонок</a>
             </div>
             <div class="header__content-block">
                 <h1 class="header__slogan">
@@ -30,7 +30,7 @@
                     Освойте английский для путешествий
                     и научитесь объясняться в любой ситуации
                 </p>
-                <button class="header__button button">Записаться на пробное занятие</button>
+                <button id="open-modal-header" class="header__button button">Записаться на пробное занятие</button>
             </div>
         </div>
     </header>
@@ -559,12 +559,26 @@
                 <p class="footer__mobile-phone">
                     +7 (945) 46-54-67
                 </p>
-                <a href="#" class="footer__header-link">
+                <a id="open-modal-footer" class="footer__header-link">
                     Заказать звонок
                 </a>
             </div>
         </div>
     </footer>
+    <div id="call-modal" class="call-modal">
+        <img id="modal-close" class="call-modal__close" src="./img/close.svg" alt="Заказать звонок от компании YES" >
+        <h2 class="call-modal__title">
+            Пробное занятие
+        </h2>
+        <p class="call-modal__description">
+            Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия
+        </p>
+        <form action="" class="call-modal__form">
+            <input type="text" class="call-modal__input" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ _ - _ _ _ _ ">
+            <button type="submit" class="button call-modal__button">Записаться на пробное занятие</button>
+        </form>
+    </div>
+    <div id="modal-overlay" class="modal-overlay"></div>
     <script src="./js/wow.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
