@@ -1255,6 +1255,7 @@
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 a:focus,
