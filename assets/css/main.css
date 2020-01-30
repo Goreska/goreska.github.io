@@ -936,6 +936,7 @@
 		position: relative;
 		width: 250px;
 		height: 178px;
+		margin-bottom: 40px;
 		overflow: hidden;
 		cursor: pointer;
 	}
@@ -951,7 +952,7 @@
 
 	.portfolio__item .portfolio__caption {
 		position: absolute;
-		top: -100%;
+		top: -110%;
 		left: 0px;
 		background: rgba(0,0,0,0.7);
 		width: 100%;
@@ -1583,8 +1584,8 @@
 					#footer .copyright li:before {
 						display: none;
 					}
-			
-			
+
+
 
 	}
 
@@ -1596,15 +1597,15 @@
 			padding-right: 100px;
 			padding-left: 100px;
 		}
-	
+
 		.portfolio__items--second{
 			justify-content: center;
 		}
-		
+
 		.portfolio__item{
 			margin-bottom: 20px;
 		}
-	
+
 		.portfolio__items--second .portfolio__item{
 			margin-right: 0px;
 			margin-top: 0px;
