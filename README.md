@@ -1,2 +1,1 @@
-# irkoman.github.io
-Portfolio
+# Vladimir Gorinov Portfolio
